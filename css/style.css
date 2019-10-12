@@ -1,6 +1,6 @@
 .parallax {
     /* The image used */
-    background-image: url("Portfolio-Site/Portfolio/images/background.jpg");
+    background-image: url("D:\Documents\portfolio\Portfolio-Site\images\background.jpg");
   
     /* Set a specific height */
     min-height: 500px; 
@@ -10,4 +10,5 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
   }
