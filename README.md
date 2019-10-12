@@ -4,7 +4,7 @@ A website I created from scratch and is being hosted on GitHub pages to display 
 # What this site includes 
 - HTML/CSS Design
 - JavaScript
-- Use of Angular framework
+- Angular
 - AJAX
 - jQuery
 - PHP
