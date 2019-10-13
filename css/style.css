@@ -1,8 +1,6 @@
 .parallax {
     /* The image used */
-    background-image: url("D:\Documents\portfolio\Portfolio-Site\images\background.jpg");
-  
-    /* Set a specific height */
+    background-image: url("background.jpg");
     min-height: 500px; 
   
     /* Create the parallax scrolling effect */
@@ -11,4 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    padding-top: 95px;
+    color: white;
+    font-size: 2em;
   }
