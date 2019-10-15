@@ -1,3 +1,7 @@
+html {
+  background-color: black;
+}
+
 .parallax {
     /* The image used */
     background-image: url("background.jpg");
@@ -13,3 +17,20 @@
     color: white;
     font-size: 2em;
   }
+
+  .div1 {
+    height:500px; 
+    background-color:rgb(21, 106, 112); 
+    font-size:32px;
+    border-radius: 25px; 
+    padding: 15px 5px
+  }
+
+  .div2 {
+    height:500px; 
+    background-color:rgb(249, 66, 255); 
+    font-size:32px;
+    border-radius: 25px; 
+    padding: 15px 5px;
+    margin-top: 15px;
+}
