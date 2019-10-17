@@ -1,36 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 html {
-  background-color: black;
+  background-color: rgb(228, 210, 210);
 }
 
 .parallax {
     /* The image used */
     background-image: url("background.jpg");
-    min-height: 500px; 
+    min-height: 850px; 
+
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    width:100%;
     text-align: center;
     padding-top: 95px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 2em;
+  }
+
+  #title {
+    text-align: center;
   }
 
   .div1 {
     height:500px; 
     background-color:rgb(21, 106, 112); 
-    font-size:32px;
-    border-radius: 25px; 
-    padding: 15px 5px
-  }
-
-  .div2 {
-    height:500px; 
-    background-color:rgb(249, 66, 255); 
+    color: rgb(175, 174, 174);
     font-size:32px;
     border-radius: 25px; 
     padding: 15px 5px;
     margin-top: 15px;
+    border: 3px solid rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .div2 {
+    height:500px; 
+    background-color:rgb(60, 219, 153); 
+    color: rgb(92, 91, 91);
+    font-size:32px;
+    border-radius: 25px; 
+    padding: 15px 5px;
+    margin-top: 15px;
+    border: 3px solid rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
 }
+
+ ul, ul > h1 > li, #skills {
+    color: rgb(102, 101, 101);
+    list-style-type: square;
+  }
+
+  #sideprojects {
+    text-align: center;
+  }
