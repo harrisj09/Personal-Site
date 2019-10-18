@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 html {
-  background-color: rgb(228, 210, 210);
+  background-color: rgb(255, 255, 255);
 }
 
 .parallax {
@@ -27,8 +27,8 @@ html {
 
   .div1 {
     height:500px; 
-    background-color:rgb(21, 106, 112); 
-    color: rgb(175, 174, 174);
+    background-color:rgb(187, 211, 212); 
+    color: rgb(92, 91, 91);
     font-size:32px;
     border-radius: 25px; 
     padding: 15px 5px;
@@ -39,7 +39,7 @@ html {
 
   .div2 {
     height:500px; 
-    background-color:rgb(60, 219, 153); 
+    background-color:rgb(168, 168, 168); 
     color: rgb(92, 91, 91);
     font-size:32px;
     border-radius: 25px; 
@@ -55,5 +55,28 @@ html {
   }
 
   #sideprojects {
+    text-align: center;
+  }
+
+  #nav-base {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    background-color: rgb(29, 28, 28);
+    border-bottom-left-radius: 50px 20px;
+    border-bottom-right-radius: 50px 20px;
+  }
+
+  #nav-base > p {
+    color: rgb(197, 197, 197);
+    margin:0;
+    padding:0;
+    margin-left: 375px;
+    font-size: 36px;
+    display: inline-block;
+    line-height: 80px;
+    vertical-align: top;
     text-align: center;
   }
