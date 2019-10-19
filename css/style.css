@@ -62,7 +62,7 @@ html, body {
   }
 
   #nav-base {
-    position: -webkit-sticky;
+    position: -webkit-sticky; /*Firefox support*/
     position: sticky;
     top: 0;
     height: 90px;
@@ -84,4 +84,13 @@ html, body {
     text-align: center;
   }
 
-  
+  footer {
+    text-align: center;
+    background-color: rgb(29, 28, 28);
+    color: white;
+    height: 90px;
+    width: 100%;
+    border-top-left-radius: 50px 20px;
+    border-top-right-radius: 50px 20px;
+    margin-top: 15px
+  }
