@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
+/*
+FOR TESTING sites design with different resolutions
+Have the "this project is in development" text change the text to what resolution or media query is being used
+*/
+
 /*desktops - higher resolution*/
 @media (min-width: 1281px) {
   html {
@@ -106,7 +111,6 @@
 }
 
 
-
 /*laptops, desktops*/
 @media (min-width: 1025px) and (max-width: 1280px) {
   html {
@@ -209,7 +213,6 @@
     margin-top: 15px
   }
 }
-
 
 
 /*tablets, ipads (portrait)*/
@@ -420,7 +423,6 @@
 }
 
 
-
 /*low resolution tablets, mobiles (landscape)*/
 @media (min-width: 481px) and (max-width: 767px) {
   html {
@@ -523,7 +525,6 @@
     margin-top: 15px
   }
 }
-
 
 
 /*smartphones mobiles (portrait)*/
