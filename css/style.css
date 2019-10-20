@@ -18,9 +18,8 @@ Have the "this project is in development" text change the text to what resolutio
   .parallax {
       /* The image used */
       background-image: url("background.jpg");
-      min-height: 850px; 
+      min-height: 850px;
   
-    
       /* Create the parallax scrolling effect */
       background-attachment: fixed;
       background-position: center;
@@ -45,7 +44,7 @@ Have the "this project is in development" text change the text to what resolutio
       height:500px; 
       background-color:rgb(187, 211, 212); 
       color: rgb(92, 91, 91);
-      font-size:16px;
+      font-size:32px;
       border-radius: 25px; 
       padding: 15px 5px;
       margin: 15px;
@@ -57,7 +56,7 @@ Have the "this project is in development" text change the text to what resolutio
       height:500px; 
       background-color:rgb(255, 162, 162); 
       color: rgb(41, 41, 41);
-      font-size:16px;
+      font-size:32px;
       border-radius: 25px; 
       padding: 15px 5px;
       margin: 15px;
