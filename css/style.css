@@ -736,11 +736,13 @@
 		color: rgb(197, 197, 197);
 		margin: 0;
 		padding: 0;
-		margin-left: 375px;
+		/*margin-left: 375px; */
 		font-size: 36px;
+		/*
 		display: inline-block;
 		text-align: center;
 		vertical-align: middle;
+		*/
 		line-height: 90px;
 	}
 	
