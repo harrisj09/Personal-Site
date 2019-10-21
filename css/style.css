@@ -63,26 +63,26 @@ Have the "this project is in development" text change the text to what resolutio
 		padding-top: 100px;
 	}
 
-	#1281 {
-		display:inline-block;
+	#desktop {
+		display: inline-block;
 		font-family: 'Raleway', sans-serif;
 		padding-top: 100px;
 	}
 	
-	#1025 {
-		display:none;
+	#laptop {
+		display: none;
 	}
 	
-	#768 {
-		display:none;
+	#tablet {
+		display: none;
 	}
 	
-	#768-orien {
-		display:none;
+	#tablet-orien {
+		display: none;
 	}
 	
-	#320 {
-		display:none;
+	#mobile {
+		display: none;
 	}
 	
 	#title {
