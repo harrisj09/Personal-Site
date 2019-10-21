@@ -1,36 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
-/*
-FOR TESTING sites design with different resolutions
-Have the "this project is in development" text change the text to what resolution or media query is being used
-      <div class="parallax">
-         <h1 id="1281">Desktops</h1>
-         <h1 id="1025">Laptops/desktops in lower view</h1>
-         <h1 id="768">Tablets in landscape</h1>
-         <h1 id="768 orien">Tablets in oriental view</h1>
-         <h1 id="320">Mobile phones</h1>
-#1281 {
-
-}
-
-#1025 {
-
-}
-
-#768 {
-
-}
-
-#768 orien {
-
-}
-
-#320 {
-
-}
-*/
-
 /*desktops - higher resolution*/
 @media (min-width: 1281px) {
 	html {
@@ -42,8 +12,6 @@ Have the "this project is in development" text change the text to what resolutio
 		margin: 0px;
 	}
 
-	
-	
 	.parallax {
 		background-image: url("background.jpg");
 		min-height: 850px;
@@ -189,6 +157,28 @@ Have the "this project is in development" text change the text to what resolutio
 		font-family: 'Raleway', sans-serif;
 		padding-top: 100px;
 	}
+
+	#desktop {
+		display: none;
+	}
+	
+	#laptop {
+		display: inline-block;
+		font-family: 'Raleway', sans-serif;
+		padding-top: 100px;
+	}
+	
+	#tablet {
+		display: none;
+	}
+	
+	#tablet-orien {
+		display: none;
+	}
+	
+	#mobile {
+		display: none;
+	}
 	
 	#title {
 		text-align: center;
@@ -293,6 +283,28 @@ Have the "this project is in development" text change the text to what resolutio
 	.parallax>h1 {
 		font-family: 'Raleway', sans-serif;
 		padding-top: 100px;
+	}
+
+	#desktop {
+		display: none;
+	}
+	
+	#laptop {
+		display: none;
+	}
+	
+	#tablet {
+		display: inline-block;
+		font-family: 'Raleway', sans-serif;
+		padding-top: 100px;
+	}
+	
+	#tablet-orien {
+		display: none;
+	}
+	
+	#mobile {
+		display: none;
 	}
 	
 	#title {
@@ -399,6 +411,28 @@ Have the "this project is in development" text change the text to what resolutio
 		font-family: 'Raleway', sans-serif;
 		padding-top: 100px;
 	}
+
+	#desktop {
+		display: none;
+	}
+	
+	#laptop {
+		display: none;
+	}
+	
+	#tablet {
+		display: inline-block;
+		font-family: 'Raleway', sans-serif;
+		padding-top: 100px;
+	}
+	
+	#tablet-orien {
+		display: none;
+	}
+	
+	#mobile {
+		display: none;
+	}
 	
 	#title {
 		text-align: center;
@@ -504,6 +538,28 @@ Have the "this project is in development" text change the text to what resolutio
 		font-family: 'Raleway', sans-serif;
 		padding-top: 100px;
 	}
+
+	#desktop {
+		display: none;
+	}
+	
+	#laptop {
+		display: none;
+	}
+	
+	#tablet {
+		display: none;
+	}
+	
+	#tablet-orien {
+		display: inline-block;
+		font-family: 'Raleway', sans-serif;
+		padding-top: 100px;
+	}
+	
+	#mobile {
+		display: none;
+	}
 	
 	#title {
 		text-align: center;
@@ -606,6 +662,28 @@ Have the "this project is in development" text change the text to what resolutio
 	}
 	
 	.parallax>h1 {
+		font-family: 'Raleway', sans-serif;
+		padding-top: 100px;
+	}
+
+	#desktop {
+		display: none;
+	}
+	
+	#laptop {
+		display: none;
+	}
+	
+	#tablet {
+		display: none;
+	}
+	
+	#tablet-orien {
+		display: none;
+	}
+	
+	#mobile {
+		display: inline-block;
 		font-family: 'Raleway', sans-serif;
 		padding-top: 100px;
 	}
