@@ -511,7 +511,7 @@
 	
 	.parallax {
 		background-image: url("background.jpg");
-		min-height: 850px;
+		min-height: 600px;
 		/* Create the parallax scrolling effect */
 		background-attachment: fixed;
 		background-position: center;
@@ -558,7 +558,7 @@
 		height: 500px;
 		background-color: rgb(187, 211, 212);
 		color: rgb(92, 91, 91);
-		font-size: 32px;
+		font-size: 18px;
 		border-radius: 25px;
 		padding: 15px 5px;
 		margin: 15px;
@@ -603,11 +603,17 @@
 		color: rgb(197, 197, 197);
 		margin: 0;
 		padding: 0;
+		/*
 		margin-left: 375px;
+		*/
+		margin-left: 95px;
 		font-size: 36px;
 		display: inline-block;
 		text-align: center;
+		/*
+		text-align: center;
 		vertical-align: middle;
+		*/
 		line-height: 90px;
 	}
 	
