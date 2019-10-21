@@ -732,6 +732,8 @@
 		position: -webkit-sticky;
 		/*Firefox support*/
 		position: sticky;
+		display: flex;
+		justify-content: center;
 		top: 0;
 		height: 170px;
 		width: 100%;
@@ -740,7 +742,7 @@
 	
 	#nav-base>span {
 		color: rgb(197, 197, 197);
-		margin: 0;
+		margin: 0 20px;
 		padding: 0;
 		/*margin-left: 375px; */
 		font-size: 36px;
