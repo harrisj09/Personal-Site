@@ -87,10 +87,10 @@ Have the "this project is in development" text change the text to what resolutio
       padding:0;
       margin-left: 375px;
       font-size: 36px;
-      display: inline-block;
-      line-height: 80px;
-      vertical-align: top;
+      display: inline-block;  
       text-align: center;
+      vertical-align: middle;
+      line-height: 90px;  
     }
   
     footer {
