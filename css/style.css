@@ -14,7 +14,7 @@
 
 	.parallax {
 		background-image: url("background.jpg");
-		min-height: 800px;
+		min-height: 900px;
 		/* Create the parallax scrolling effect */
 		background-attachment: fixed;
 		background-position: center;
@@ -155,7 +155,7 @@
 	
 	footer {
 		text-align: center;
-		background-color: rgb(29, 28, 28);
+		background-color: #393f4d;
 		height: 90px;
 		width: 100%;
 		border-top-left-radius: 50px 20px;
