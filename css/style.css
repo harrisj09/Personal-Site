@@ -4,7 +4,7 @@
 /*desktops - higher resolution*/
 @media (min-width: 1281px) {
 	html {
-		background-color: rgb(255, 255, 255);
+		background-color: #EDF5E1;
 	}
 	
 	html,
@@ -36,12 +36,13 @@
 	
 	.parallax>h1 {
 		font-family: 'Raleway', sans-serif;
-		padding-top: 100px;
+		color: #EDF5E1;
 		-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
 		-moz-animation: fadein 2s; /* Firefox < 16 */
 		 -ms-animation: fadein 2s; /* Internet Explorer */
 		  -o-animation: fadein 2s; /* Opera < 12.1 */
 			 animation: fadein 2s;
+		
 	}
 	
 	@keyframes fadein {
@@ -94,6 +95,10 @@
 	#mobile {
 		display: none;
 	}
+
+	#titleBottom {
+		font-size: 16px;
+	}
 	
 	#title {
 		text-align: center;
@@ -132,10 +137,10 @@
 		top: 0;
 		height: 90px;
 		width: 100%;
-		background-color: rgb(29, 28, 28);
+		background-color: #CCCCCC;
 	}
 	
-	#nav-base>span {
+	#nav-base>a {
 		color: rgb(197, 197, 197);
 		margin: 0;
 		padding: 0;
@@ -145,17 +150,21 @@
 		text-align: center;
 		vertical-align: middle;
 		line-height: 90px;
+		color: #EDF5E1;
 	}
+	/*
+
+	*/
 	
 	footer {
 		text-align: center;
 		background-color: rgb(29, 28, 28);
-		color: white;
 		height: 90px;
 		width: 100%;
 		border-top-left-radius: 50px 20px;
 		border-top-right-radius: 50px 20px;
-		margin-top: 15px
+		margin-top: 15px;
+		color: #EDF5E1;
 	}
 }
 
@@ -228,19 +237,6 @@
 		border: 3px solid rgb(0, 0, 0);
 		font-family: 'Raleway', sans-serif;
 	}
-	
-	.div2 {
-		height: 500px;
-		background-color: rgb(255, 162, 162);
-		color: rgb(41, 41, 41);
-		font-size: 32px;
-		border-radius: 25px;
-		padding: 15px 5px;
-		margin: 15px;
-		border: 3px solid rgb(0, 0, 0);
-		font-family: 'Raleway', sans-serif;
-	}
-	
 	ul,
 	ul>h1>li,
 	#skills {
@@ -768,7 +764,7 @@
 		top: 0;
 		height: 170px;
 		width: 100%;
-		background-color: rgb(29, 28, 28);
+		background-color: #5CDB95;
 	}
 	
 	#nav-base>span {
@@ -785,7 +781,7 @@
 		line-height: 90px;
 	}
 	
-	footer {
+	footer p {
 		text-align: center;
 		background-color: rgb(29, 28, 28);
 		color: white;
@@ -793,6 +789,8 @@
 		width: 100%;
 		border-top-left-radius: 50px 20px;
 		border-top-right-radius: 50px 20px;
-		margin-top: 15px
+		margin-top: 15px;
+		color: #EDF5E1;
+		font-size: 12px;
 	}
 }
