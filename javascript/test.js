@@ -1,2 +1,2 @@
 //Changing elements or creating elements
-alert( 'Hello, World!' );
+//alert( 'Hello, World!' );
