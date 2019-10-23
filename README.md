@@ -5,7 +5,5 @@
  - HTML/CSS Design
  - JavaScript
  - Angular
- - AJAX
- - jQuery
  - PHP
  - node.js
