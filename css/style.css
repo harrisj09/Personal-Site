@@ -4,7 +4,7 @@
 /*desktops - higher resolution*/
 @media (min-width: 1281px) {
 	html {
-		background-color: #EDF5E1;
+		background-color: rgb(255, 255, 255);
 	}
 	
 	html,
@@ -179,8 +179,6 @@
 		height: 90px;
 		width: 100%;
 		background-color: #96858F;
-		border-bottom-left-radius: 50px 20px;
-		border-bottom-right-radius: 50px 20px;
 	}
 	
 	#nav-base>a {
