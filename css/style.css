@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Signika&display=swap');
 
+/*
+	Recreating the design for the prototype
+- Remove nav bar
+- Put the text and icons in .parallax
+- make those items and there position: static;
+*/
+
 /*desktops - higher resolution*/
 @media (min-width: 1300px) {
 	html {
@@ -28,15 +35,6 @@
 		
 	}
 
-	/*Video not added yet!*/
-	#myVideo {
-		position: fixed;
-		right: 0;
-		bottom: 0;
-		min-width: 100%; 
-		min-height: 100%;
-	  }
-
 	.parallax>h1 {
 		font-family: 'Signika', sans-serif;
 		color: #EDF5E1;
@@ -46,7 +44,16 @@
 		 -ms-animation: fadein 2s; /* Internet Explorer */
 		  -o-animation: fadein 2s; /* Opera < 12.1 */
 			 animation: fadein 2s;
-		
+	}
+
+	.parallax>#work {
+		color: white;
+		font-size: 34px;
+	}
+
+	.parallax>#about {
+		color: white;
+		font-size: 34px;
 	}
 	
 	@keyframes fadein {
