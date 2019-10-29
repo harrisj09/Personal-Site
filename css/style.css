@@ -172,15 +172,10 @@
 		list-style-type: square;
 	}
 	
-	#namequestion {
-		text-align: center;
-	}
-	
 	#nav-base {
 		position: -webkit-sticky;
 		/*Firefox support*/
 		position: sticky;
-		display: flex;
 		top: 0;
 		height: 90px;
 		width: 100%;
@@ -188,20 +183,15 @@
 	}
 
 	#nav-base>a {
-		color: rgb(197, 197, 197);
+		color: rgb(255, 255, 255);
 		margin: 0;
 		padding: 0;
-		margin: 0 20px;
-		font-size: 36px;
+		margin: 0 40px;
+		font-size: 26px;
 		display: inline-block;
 		vertical-align: middle;
 		line-height: 90px;
-		color: #EDF5E1;
 	}
-
-	#nav-base > img {
-		text-align: right;
-	} 
 	
 	footer {
 		text-align: center;
