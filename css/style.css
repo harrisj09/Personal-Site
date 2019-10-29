@@ -23,18 +23,13 @@ body {
     width: 100%;
     text-align: center;
     display: block;
-    color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
+	font-family: 'Fira Sans', sans-serif;
 }
 
 .parallax>h1 {
-    font-family: 'Signika', sans-serif;
-    color: #EDF5E1;
+	padding-top: 200px;
     font-size: 4em; 
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-     -ms-animation: fadein 2s; /* Internet Explorer */
-      -o-animation: fadein 2s; /* Opera < 12.1 */
-         animation: fadein 2s;
 }
   
   nav {
