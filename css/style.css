@@ -37,21 +37,17 @@ html, body {
     display: block;
 	  color: rgb(255, 255, 255);
 	  font-family: 'Fira Sans', sans-serif;
-}
+  }
 
-.parallax>h1 {
+  .parallax > h1 {
     margin: 0;
     font-size: 4em;
     padding-top: 15%; 
-}
+  }
 
-.parallax>p {
+  .parallax > p {
   font-size: 2em; 
   margin: 0;
-}
-  
-  nav {
-  
   }
   
   ul {
@@ -60,7 +56,7 @@ html, body {
     margin: 0;
     padding: 0;
   }
-  
+
   a {
     display: block;
     text-decoration: none;
@@ -81,10 +77,7 @@ html, body {
   }
   
   .icon {
-    height: 32px;
-    width: 32px;
     margin-left: .2rem;
-    margin-bottom: 20%;
    }
 
    .about-div {
