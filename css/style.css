@@ -83,8 +83,8 @@ html, body {
   .icon {
     height: 32px;
     width: 32px;
-    background: #ffffff20;
     margin-left: .2rem;
+    margin-bottom: 20px;
    }
 
    .about-div {
