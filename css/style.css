@@ -62,7 +62,7 @@ html, body {
 
 
   /* HERO */
-  .parallax {
+  #parallax {
     background-image: url("background.jpg");
     min-height: 950px;
     /* Create the parallax scrolling effect */
@@ -76,32 +76,32 @@ html, body {
 	  font-family: 'Montserrat', sans-serif;
   }
 
-  .parallax > h1 {
+  #parallax > h1 {
     margin: 0;
     font-size: 5em;
     padding-top: 15%; 
     padding-bottom: 15px;
   }
 
-  .parallax > p {
+  #parallax > p {
   font-size: 1.5em; 
   margin: 0;
   }
 
 
   /* ABOUT SECTION */
-   .about-div {
+   #about-div {
      margin-top: 30px;
      font-family: 'Montserrat', sans-serif;
    }
 
-   .about-div > h1 {
+   #about-div > h1 {
      font-size: 3em;
      width: 50%;
      text-align: center;
    }
 
-   .about-div > p {
+   #about-div > p {
     padding-left: 30px;
     text-align: center;
     width: 50%;
@@ -121,7 +121,7 @@ html, body {
      height: 90px;
      font-family: 'Montserrat', sans-serif;
      text-align: center;
-     background-color: rgb(46, 46, 46);
+     background-color: rgb(31, 30, 30);
      vertical-align: center;
      color: white;
    }

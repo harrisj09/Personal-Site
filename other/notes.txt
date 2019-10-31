@@ -3,3 +3,11 @@
 - everything should happen in the Parent container, that's my tip.
 The parent container, as in, the thing that wraps the about container
 +----------------------------------------------+
+
+- The box model,
+  Display property
+  & Position property(note: z-index); 
+
+- For html, learn about semantic tags and the BEM naming convention
+
++----------------------------------------------+
