@@ -92,7 +92,7 @@ html, body {
   /* ABOUT SECTION */
    .about-div {
      margin-top: 30px;
-     
+     font-family: 'Montserrat', sans-serif;
    }
 
    .about-div > h1 {
@@ -105,15 +105,21 @@ html, body {
     padding-left: 30px;
     text-align: center;
     width: 50%;
-    height: 100px;
+    height: 200px;
     font-size: 2em;
+   }
+
+   .skills {
+     margin-top: 100px;
    }
 
 
    /* BOTTOM */
    footer {
-     margin-top: 175px;
+     margin-top: 150px;
+     padding: .25rem;
      height: 90px;
+     font-family: 'Montserrat', sans-serif;
      text-align: center;
      background-color: rgb(46, 46, 46);
      vertical-align: center;
