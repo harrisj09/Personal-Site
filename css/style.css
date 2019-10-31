@@ -41,12 +41,13 @@ html, body {
 
   .parallax > h1 {
     margin: 0;
-    font-size: 4em;
+    font-size: 5em;
     padding-top: 15%; 
+    padding-bottom: 15px;
   }
 
   .parallax > p {
-  font-size: 2em; 
+  font-size: 1.5em; 
   margin: 0;
   }
   
@@ -81,14 +82,25 @@ html, body {
    }
 
    .about-div {
-     margin-top: 20px
+     margin-top: 30px;
+     
    }
 
    .about-div > h1 {
+     width: 50%;
      text-align: center;
    }
 
+   .about-div > p {
+    padding-left: 30px;
+    text-align: center;
+    width: 50%;
+    height: 100px;
+    font-size: 2em;
+   }
+
    footer {
+     margin-top: 175px;
      height: 90px;
      text-align: center;
      background-color: rgb(46, 46, 46);
