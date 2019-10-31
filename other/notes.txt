@@ -1,0 +1,5 @@
+- now center it with flexbox
+
+- everything should happen in the Parent container, that's my tip.
+The parent container, as in, the thing that wraps the about container
++----------------------------------------------+
