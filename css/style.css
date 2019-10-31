@@ -2,6 +2,8 @@ html, body {
     margin: 0px;
   }
   
+
+  /* Nav bar at the top of the page */
   header {
     position: fixed;
     top: 0;
@@ -12,6 +14,8 @@ html, body {
     align-items: center;
   }
 
+
+/* this needs to be fixed but Im leaving it here for when I actually add it back */
   #overlay {
     position: absolute; 
     display: block;
@@ -24,7 +28,40 @@ html, body {
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 2; 
   }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
+  /* Icons for nav bar */
+  a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 2rem;
+    transition: all .5s ease-in-out;
+  }
+  
+  a:hover {
+    background: #fcfcfc; 
+    color: black;
+  }
+  
+  .social-links {
+    display: flex;
+    margin-right: 2rem;
+  }
+  
+  .icon {
+    margin-left: .2rem;
+   }
+
+
+  /* HERO */
   .parallax {
     background-image: url("background.jpg");
     min-height: 950px;
@@ -50,37 +87,9 @@ html, body {
   font-size: 1.5em; 
   margin: 0;
   }
-  
-  ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
 
-  a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    padding: 2rem;
-    transition: all .5s ease-in-out;
-  }
-  
-  a:hover {
-    background: #fcfcfc; 
-    color: black;
-  }
-  
-  .social-links {
-    display: flex;
-    margin-right: 2rem;
-  }
-  
-  .icon {
-    margin-left: .2rem;
-   }
 
+  /* ABOUT SECTION */
    .about-div {
      margin-top: 30px;
      
@@ -99,6 +108,8 @@ html, body {
     font-size: 2em;
    }
 
+
+   /* BOTTOM */
    footer {
      margin-top: 175px;
      height: 90px;
