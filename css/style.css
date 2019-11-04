@@ -3,7 +3,7 @@ html, body {
   }
   
 
-  /* Nav bar at the top of the page */
+  /* NAV BAR */
   header {
     position: fixed;
     top: 0;
@@ -15,7 +15,11 @@ html, body {
   }
 
 
-/* this needs to be fixed but Im leaving it here for when I actually add it back */
+/* this needs to be fixed but Im leaving it here for when I actually add it back 
+
+    - Try setting Z values for background image as 1, overlay as 2 and everything else above.
+*/
+
   #overlay {
     position: absolute; 
     display: block;
@@ -96,28 +100,43 @@ html, body {
 
    #about-div > h1 {
      font-size: 3em;
+   }
+
+   #aboutme {
      width: 50%;
      text-align: center;
    }
 
    #about-div > p {
-    padding-left: 30px;
+    padding-left: 50px;
     text-align: center;
     width: 50%;
     height: 200px;
-    font-size: 2em;
+    font-size: 1.75rem;
    }
 
+   /* SKILLS */
    .skills {
      margin-top: 100px;
+     text-align: center;
    }
 
+   /* LANGUAGES */
+   .row-1 {
+    margin-left: 100px;
+    display: inline-block;
+  }
+  
+  .row-2 {
+    margin-left: 100px;
+    display: inline-block;
+  }
 
    /* BOTTOM */
    footer {
      margin-top: 150px;
      padding: .25rem;
-     height: 90px;
+     height: 300px;
      font-family: 'Montserrat', sans-serif;
      text-align: center;
      background-color: rgb(31, 30, 30);
