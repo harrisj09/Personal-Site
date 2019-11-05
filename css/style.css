@@ -96,8 +96,6 @@ html, body {
    #about-div {
      margin-top: 30px;
      font-family: 'Montserrat', sans-serif;
-     display: flex;
-     flex-flow: row wrap;
    }
 
    #about-div > h1 {
@@ -121,10 +119,6 @@ html, body {
    .skills {
      margin-top: 100px;
      text-align: center;
-   }
-
-   .skills-icon {
-
    }
 
    /* LANGUAGES */
