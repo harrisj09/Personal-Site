@@ -124,12 +124,8 @@ html, body {
    .skills-icons {
      display: flex;
      flex-flow: row wrap;
+     justify-content: center;
    }
-
-   /* LANGUAGES */
-   .row-1 {
-    margin-left: 100px;
-  }
 
    /* BOTTOM */
    footer {
