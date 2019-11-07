@@ -127,6 +127,23 @@ html, body {
      justify-content: space-evenly;
    }
 
+   /* WORK */
+   .work-div {
+      margin: 150px;
+   }
+
+   .work-div > h1{
+     text-align: center;
+     font-size: 3em;
+     font-family: 'Montserrat', sans-serif;
+   }
+   .head-project-thumbnail {
+    margin: 100px;
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+   }
+
    /* BOTTOM */
    footer {
      margin-top: 150px;
