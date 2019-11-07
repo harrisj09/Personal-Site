@@ -18,7 +18,6 @@ html, body {
 /* this needs to be fixed but Im leaving it here for when I actually add it back 
 
     - Try setting Z values for background image as 1, overlay as 2 and everything else above.
-*/
 
   #overlay {
     position: absolute; 
@@ -32,6 +31,7 @@ html, body {
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 2; 
   }
+  */
   
   ul {
     display: flex;
@@ -125,7 +125,6 @@ html, body {
      display: flex;
      flex-flow: row wrap;
      justify-content: space-evenly;
-
    }
 
    /* BOTTOM */
@@ -139,3 +138,40 @@ html, body {
      vertical-align: center;
      color: white;
    }
+
+   /* MEDIA QUERIES */
+
+   /*Mobile Style*/
+@media only screen and (max-width: 480px) {
+
+  #parallax > h1 {
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    font-size: 3em;
+    padding-top: 50%;
+    padding-bottom: 15px;
+  }
+
+  #parallax > p {
+    font-size: 1.25em; 
+    margin: 0;
+    }
+
+  #about-div > h1 {
+    font-size: 1em;
+  }
+
+  #aboutme {
+    width: 100%;
+    text-align: center; 
+  }
+
+  #about-div > p {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 200px;
+    font-size: 1.25rem;
+  }
+}
