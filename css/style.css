@@ -123,8 +123,9 @@ html, body {
 
    .skills-icons {
      display: flex;
-     flex-flow: row wrap;
+     flex-wrap: wrap;
      justify-content: space-evenly;
+     flex: 0 1 200px;
    }
 
    /* WORK */
@@ -166,7 +167,7 @@ html, body {
   #parallax > h1 {
     display: flex;
     justify-content: center;
-    vertical-align: center;
+    align-items: center;
     font-size: 3em;
     padding-top: 50%;
     padding-bottom: 15px;
