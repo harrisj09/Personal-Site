@@ -11,3 +11,21 @@ The parent container, as in, the thing that wraps the about container
 - For html, learn about semantic tags and the BEM naming convention
 
 +----------------------------------------------+
+
+/* this needs to be fixed but Im leaving it here for when I actually add it back 
+
+    - Try setting Z values for background image as 1, overlay as 2 and everything else above.
+
+  #overlay {
+    position: absolute; 
+    display: block;
+    width: 100%; 
+    min-height: 950px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 2; 
+  }
+  */
