@@ -2,11 +2,11 @@ html, body {
     margin: 0px;
     scroll-behavior: smooth;
   }
-  
 
   /* NAV BAR */
   header {
     position: fixed;
+    z-index: 3;
     top: 0;
     width: 100%;
     background: #00000040;
@@ -48,7 +48,9 @@ html, body {
 
   /* HERO */
   #parallax {
-    background-image: url("background.jpg");
+    position: relative;
+    z-index: 1;
+    background-image: url("images/background.jpg");
     min-height: 950px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
