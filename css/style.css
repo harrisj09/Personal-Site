@@ -110,11 +110,11 @@ html, body {
    }
 
    /* WORK */
-   .work-div {
+   #work-div {
       margin-top: 150px;
    }
 
-   .work-div > h1{
+   #work-div > h1{
      text-align: center;
      font-size: 3em;
      font-family: 'Montserrat', sans-serif;
