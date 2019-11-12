@@ -9,7 +9,7 @@
  - node.js
 
 # Background information about the site
- The CSS proportion of the site makes use of Flexbox, CSS Grid, media queries, display property and position property in order to deliver a fully responsive site. I'd prefer not to use CSS frameworks due to the fact that all of this can accomplished without them.
+ The CSS proportion of the site makes use of Flexbox, CSS Grid, media queries, display property and position property in order to deliver a fully responsive site. I'd prefer not to use CSS frameworks due to the fact that all of this can accomplished without them, but I have no problem with implementing a CSS preprocessor(SASS most likely).
 
 
 
