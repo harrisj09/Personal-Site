@@ -29,3 +29,8 @@ The parent container, as in, the thing that wraps the about container
     z-index: 2; 
   }
   */
+
++----------------------------------------------+
+Have the nav bar go away after it reaches the about me section
+
+- have the nav bar be a z index of 1 and the elements inside of it be 2 and the body section be 2
