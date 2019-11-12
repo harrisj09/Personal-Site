@@ -63,6 +63,7 @@ html, body {
     margin-left: .2rem;
    }
 
+
   /* 
   
   HERO 
@@ -120,26 +121,29 @@ html, body {
 
   */
    #about-div {
-     margin-top: 30px;
      font-family: 'Montserrat', sans-serif;
    }
 
    #about-div > h1 {
+     margin-top: 30px;
      font-size: 2em;
    }
 
    #aboutme {
-     width: 50%;
+     width: 100%;
      text-align: center; 
    }
 
    #about-div > p {
-    padding-left: 50px;
-    text-align: center;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: left;
     width: 50%;
     height: 200px;
     font-size: 1.25rem;
    }
+
 
    /* 
 
@@ -157,6 +161,7 @@ html, body {
      justify-content: space-evenly;
      flex: 0 1 200px;
    }
+
 
    /* 
 
@@ -181,6 +186,7 @@ html, body {
     border-radius: 15px;
    }
 
+
    /* 
    
    FOOTER 
@@ -196,6 +202,7 @@ html, body {
      vertical-align: center;
      color: white;
    }
+
 
    /* MEDIA QUERIES */
 
