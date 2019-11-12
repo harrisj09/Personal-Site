@@ -1,3 +1,10 @@
+/*
+
+  TODO: Apply z-index for overlay to different media queries
+
+*/
+
+
 html, body {
     margin: 0px;
     scroll-behavior: smooth;
