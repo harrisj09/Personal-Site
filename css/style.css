@@ -231,7 +231,7 @@ html, body {
     #about-div > p {
       display: flex;
       justify-content: center;
-      width: 90%;
+      width: 80%;
       height: 200px;
       font-size: 1.25rem;
     }
@@ -243,6 +243,35 @@ html, body {
    */
 @media only screen and (max-width: 600px) {
 
+  #parallax {
+    background-image: url("images/background.jpg");
+    min-height: 950px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+    display: block;
+	  color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    z-index: 3;
+  }
+
+  #parallax::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(1, 23, 82);
+    top: 0;
+    left: 0;
+    opacity: .2;
+    z-index: 3;
+  }
+
   #parallax > h1 {
     display: flex;
     justify-content: center;
@@ -250,12 +279,16 @@ html, body {
     font-size: 3em;
     padding-top: 50%;
     padding-bottom: 15px;
+    position: relative;
+    z-index: 5;
   }
 
   #parallax > p {
     font-size: 1.25em; 
     margin: 0;
-    }
+    position: relative;
+    z-index: 5;
+  }
 
     #about-div > h1 {
       font-size: 2em;
@@ -274,8 +307,8 @@ html, body {
       width: 80%;
       height: 200px;
       font-size: 1.25rem;
+      padding-bottom: 100px;
     }
-
     
   /* 
   
