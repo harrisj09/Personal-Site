@@ -261,11 +261,15 @@ html, body {
 
     #about-div > p {
       display: flex;
+      position: relative;
+      right: 5;
       justify-content: center;
-      width: 90%;
+      width: 80%;
       height: 200px;
       font-size: 1.25rem;
     }
+
+    
   /* 
   
   NAV BAR 
@@ -300,5 +304,5 @@ html, body {
   .icon {
     display: none;
    }
-
   }
+}
