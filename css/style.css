@@ -1,6 +1,7 @@
 /*
 
   TODO: Apply z-index for overlay to different media queries
+    - Have the z-index 
 
 */
 
@@ -124,7 +125,7 @@ html, body {
    }
 
    #about-div > h1 {
-     font-size: 3em;
+     font-size: 2em;
    }
 
    #aboutme {
@@ -137,7 +138,7 @@ html, body {
     text-align: center;
     width: 50%;
     height: 200px;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
    }
 
    /* 
@@ -168,7 +169,7 @@ html, body {
 
    #work-div > h1{
      text-align: center;
-     font-size: 3em;
+     font-size: 2em;
      font-family: 'Montserrat', sans-serif;
    }
    .head-project-thumbnail {
