@@ -191,13 +191,50 @@ html, body {
 
    /* MEDIA QUERIES */
 
+   /* 
+
+   Tablet Styles
+
+   */
+   @media only screen and (max-width: 900px) {
+
+    #parallax > h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3em;
+      padding-top: 50%;
+      padding-bottom: 15px;
+    }
+  
+    #parallax > p {
+      font-size: 1.25em; 
+      margin: 0;
+      }
+  
+    #about-div > h1 {
+      font-size: 2em;
+    }
+  
+    #aboutme {
+      width: 100%;
+      text-align: center; 
+    }
+  
+    #about-div > p {
+      display: flex;
+      justify-content: center;
+      width: 90%;
+      height: 200px;
+      font-size: 1.25rem;
+    }
 
    /*
    
    Mobile Style
    
    */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 550px) {
 
   #parallax > h1 {
     display: flex;
@@ -213,20 +250,55 @@ html, body {
     margin: 0;
     }
 
-  #about-div > h1 {
-    font-size: 2em;
+    #about-div > h1 {
+      font-size: 2em;
+    }
+
+    #aboutme {
+      width: 100%;
+      text-align: center; 
+    }
+
+    #about-div > p {
+      display: flex;
+      justify-content: center;
+      width: 90%;
+      height: 200px;
+      font-size: 1.25rem;
+    }
+  /* 
+  
+  NAV BAR 
+  
+  */
+  header {
+    display: none; 
+  }
+  
+  ul {
+    display: none;
   }
 
-  #aboutme {
-    width: 100%;
-    text-align: center; 
+  /* 
+  
+  Icons for nav bar 
+  
+  */
+  a {
+    display: none;
   }
+  
+  a:hover {
+    display: none;
+  }
+  
+  .social-links {
+    display: none;
+    
+  }
+  
+  .icon {
+    display: none;
+   }
 
-  #about-div > p {
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    height: 200px;
-    font-size: 1.25rem;
   }
-}
