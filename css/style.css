@@ -178,6 +178,16 @@ html, body {
     border-radius: 15px;
    }
 
+   .work-row {
+     height: 100px;
+     width: 100px;
+     border: 2px solid black;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     flex: 0 1 200px;
+   }
+
 
    /* 
    
