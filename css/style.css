@@ -211,7 +211,47 @@ html, body {
    }
 
 
-   /* MEDIA QUERIES */
+
+
+   /* 
+   
+
+   ///////////////
+   /             /
+   /MEDIA QUERIES/
+   /             / 
+   ///////////////
+   
+   
+   */
+
+
+
+   /*
+
+   Have the side projects section change display and position property
+
+   */
+   @media only screen and (max-width: 1400px) {
+  
+    #about-div > h1 {
+      font-size: 2em;
+    }
+  
+    #aboutme {
+      width: 100%;
+      text-align: center; 
+    }
+  
+    #about-div > p {
+      margin-left: 100px;
+      margin-top: 50px;
+      margin-bottom: 100px;
+      text-align: left;
+      width: 50%;
+      height: 200px;
+      font-size: 1.25rem;
+    }
 
    /* 
 
@@ -360,4 +400,5 @@ html, body {
     display: none;
    }
   }
+}
 }
