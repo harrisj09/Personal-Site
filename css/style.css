@@ -232,6 +232,7 @@ html, body {
    /*
 
    THIS CHANGES THE SIDE PROJECTS DISPLAY AND POSITION PROPERTY
+   - The Smaller boxes arent on the same line as the bigger box
 
    */
    @media only screen and (max-width: 1400px) {
@@ -254,6 +255,7 @@ html, body {
       height: 200px;
       font-size: 1.25rem;
     }
+  }
 
    /* 
 
@@ -292,6 +294,7 @@ html, body {
       height: 200px;
       font-size: 1.25rem;
     }
+  }
 
    /*
    
@@ -401,6 +404,4 @@ html, body {
   .icon {
     display: none;
    }
-  }
-}
 }
