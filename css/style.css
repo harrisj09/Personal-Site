@@ -118,7 +118,7 @@ html, body {
    }
 
    #about-div > h1 {
-    margin: 150px 0 0 0;
+    margin: 150px 0 75px 0;
      font-size: 2em;
    }
 
@@ -220,6 +220,16 @@ html, body {
      background-color: rgb(31, 30, 30);
      vertical-align: center;
      color: white;
+   }
+
+   footer > div {
+     display: flex;
+     justify-content: space-evenly;
+   }
+
+   footer > div > p {
+    border: 2px solid white;
+    height: 45px;
    }
 
 
