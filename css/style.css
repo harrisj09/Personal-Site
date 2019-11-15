@@ -147,7 +147,7 @@ html, body {
    }
 
    .skills-icons {
-     margin: 100px 0 100px 0;
+     margin: 200px 0 200px 0;
      display: flex;
      flex-wrap: wrap;
      justify-content: space-evenly;
@@ -164,10 +164,10 @@ html, body {
    }
 
    #work-div > h1 {
-      
      text-align: center;
      font-size: 2em;
      font-family: 'Montserrat', sans-serif;
+     margin-bottom: 150px;
    }
 
    .div-wrapper {
@@ -190,9 +190,19 @@ html, body {
    */
 
    #contact {
-     display: flex;
-     justify-content: center;
      font-family: 'Montserrat', sans-serif;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+
+   #contact > h1 {
+    margin: 200px 0 50px 0;
+    font-size: 2em;
+   }
+
+   #contact > p {
+    font-size: 1.25em;
    }
 
 
@@ -415,7 +425,7 @@ html, body {
    Mobile Style
    
    */
-   @media only screen and (max-width: 400px) {
+   @media only screen and (max-width: 350px) {
 
     #parallax {
       background-image: url("images/background.jpg");
