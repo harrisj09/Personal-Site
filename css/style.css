@@ -161,10 +161,10 @@ html, body {
    
    */
    #work-div {
-      margin-top: 150px;
    }
 
    #work-div > h1 {
+      
      text-align: center;
      font-size: 2em;
      font-family: 'Montserrat', sans-serif;
@@ -173,25 +173,14 @@ html, body {
    .div-wrapper {
     display: flex;
     flex-wrap: wrap;
-   }
-
-   .head-project-thumbnail {
-    margin-left: 50px;
-    margin-top: 50px;
-    height: 400px;
-    width: 30%;
-    border: 2px solid black;
-    border-radius: 15px;
+    justify-content: space-evenly;
    }
 
    .work-row {
-     position: relative;
-     margin-left: 40px;
-     top: 150px;
-     height: 15vh;
-     width: 15vh;
+     height: 25vh;
+     width: 25vh;
      border: 2px solid black;
-     
+     border-radius: 50px;
    }
 
    /*
@@ -203,7 +192,9 @@ html, body {
    #contact {
      display: flex;
      justify-content: center;
+     font-family: 'Montserrat', sans-serif;
    }
+
 
    /* 
    
@@ -314,7 +305,7 @@ html, body {
    Mobile Style
    
    */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
   #parallax {
     background-image: url("images/background.jpg");
