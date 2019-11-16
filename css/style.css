@@ -55,6 +55,9 @@ html, body {
     margin-left: .2rem;
    }
 
+   .icon > img {
+     width: 60px;
+   }
 
   /* 
   
