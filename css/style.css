@@ -107,8 +107,10 @@ html, body {
   }
 
   #parallax > .cta {
+    position: relative;
+    z-index: 5;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(87, 158, 252);
+    background-color: rgb(123, 178, 250);
     border: none;
     border-radius: 10px;
     color: white;
