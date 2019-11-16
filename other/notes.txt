@@ -34,3 +34,28 @@ The parent container, as in, the thing that wraps the about container
 Have the nav bar go away after it reaches the about me section
 
 - have the nav bar be a z index of 1 and the elements inside of it be 2 and the body section be 2
+
++----------------------------------------------+
+
+/* --- Components --- */
+
+/* Btn Component */
+.btn {
+  display: inline-block;
+  padding: .5rem 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: opacity .2s ease-in-out;
+}
+
+.btn:hover {
+  opacity: .8;
+}
+
+.btn--primary {
+  background: #2498ed;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
