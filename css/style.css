@@ -214,7 +214,7 @@ html, body {
    .work-row .side-project-image {
       height: 100%;
       width: 100%;
-      border-radius: 50px;
+      border-radius: 45px;
    }
 
    /*
@@ -270,8 +270,7 @@ html, body {
    }
 
    footer > .copyright > p{
-     position: relative;
-     bottom: 0;
+      font-size: .65rem;
    }
 
    /* 
