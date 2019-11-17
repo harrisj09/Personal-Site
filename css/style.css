@@ -257,9 +257,8 @@ html, body {
      justify-content: space-evenly;
    }
 
-   footer > .images > p {
-    border: 2px solid white;
-    height: 45px;
+   footer > .images > img {
+    width: 45px;
    }
 
    footer > .copyright > p{
