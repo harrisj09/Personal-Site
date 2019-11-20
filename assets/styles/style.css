@@ -246,6 +246,8 @@ html, body {
      background-color: rgb(31, 30, 30);
      vertical-align: center;
      color: white;
+     display: flex;
+     flex-flow: column nowrap;
    }
 
    footer > div {
