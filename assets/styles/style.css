@@ -250,13 +250,10 @@ html, body {
      flex-flow: column nowrap;
    }
 
-    footer > .images > .footer-images {
+    footer > .images > .footer-images > img {
+        margin-top: 60px;
         width: 45px;
     }
-
-    footer > img {
-        width: 45px;
-   }
 
    footer > .copyright {
        margin-top: auto;
