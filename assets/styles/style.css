@@ -405,6 +405,33 @@ html, body {
   .icon {
     display: none;
    }
+
+    footer {
+        margin-top: 150px;
+        padding: .25rem;
+        height: 300px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        background-color: rgb(31, 30, 30);
+        vertical-align: center;
+        color: white;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    footer > .images > .footer-images > img {
+        margin-top: 60px;
+        width: 45px;
+    }
+
+    footer > .copyright {
+        margin-top: auto;
+    }
+
+    footer > .copyright > p{
+        font-size: .65rem;
+    }
+
 }
 
    /*
