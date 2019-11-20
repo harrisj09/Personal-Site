@@ -1,14 +1,17 @@
-html, body {
+html,
+body {
     margin: 0px;
     scroll-behavior: smooth;
-  }
+}
 
-  /* 
-  
-  NAV BAR 
-  
+
+/*
+
+  NAV BAR
+
   */
-  header {
+
+header {
     position: fixed;
     z-index: 5;
     top: 0;
@@ -17,54 +20,57 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-  }
-  
-  ul {
+}
+
+ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-  }
+}
 
-  /* 
-  
-  Icons for nav bar 
-  
+
+/*
+
+  Icons for nav bar
+
   */
-  .nav-bar-icons {
+
+.nav-bar-icons {
     display: block;
     text-decoration: none;
     color: white;
     font-size: 20px;
     padding: 2rem;
     transition: all .5s ease-in-out;
-  }
-  
-  .nav-bar-icons:hover {
-    background: #fcfcfc; 
+}
+
+.nav-bar-icons:hover {
+    background: #fcfcfc;
     color: black;
-  }
-  
-  .social-links {
+}
+
+.social-links {
     display: flex;
     margin-right: 2rem;
-  }
-  
-  .icon {
+}
+
+.icon {
     margin-left: .2rem;
-   }
+}
 
-   .icon > img {
-     width: 60px;
-   }
+.icon>img {
+    width: 60px;
+}
 
-  /* 
-  
-  HERO 
-  
+
+/*
+
+  HERO
+
   */
-  #parallax {
+
+#parallax {
     background-image: url("images/background.jpg");
     min-height: 1000px;
     /* Create the parallax scrolling effect */
@@ -74,13 +80,13 @@ html, body {
     width: 100%;
     text-align: center;
     display: block;
-	  color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
     position: relative;
     z-index: 3;
-  }
+}
 
-  #parallax::after {
+#parallax::after {
     content: "";
     display: block;
     width: 100%;
@@ -90,25 +96,25 @@ html, body {
     top: 0;
     left: 0;
     z-index: 3;
-  }
+}
 
-  #parallax > h1 {
+#parallax>h1 {
     position: relative;
     z-index: 5;
     margin: 0;
     font-size: 5em;
-    padding-top: 15%; 
+    padding-top: 15%;
     padding-bottom: 15px;
-  }
+}
 
-  #parallax > p {
-  position: relative;
-  z-index: 5;
-  font-size: 1.5em; 
-  margin: 0;
-  }
+#parallax>p {
+    position: relative;
+    z-index: 5;
+    font-size: 1.5em;
+    margin: 0;
+}
 
-  #parallax > .cta {
+#parallax>.cta {
     position: relative;
     z-index: 5;
     font-family: 'Montserrat', sans-serif;
@@ -123,208 +129,212 @@ html, body {
     font-size: 16px;
     margin: 20px 2px;
     cursor: pointer;
-  }
+}
 
-  /* 
 
-  ABOUT SECTION 
+/*
+
+  ABOUT SECTION
 
   */
-   #about-div {
-     margin: 150px 0 0 0;
-     font-family: 'Montserrat', sans-serif;
-   }
 
-   #about-div > h1 {
+#about-div {
+    margin: 150px 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about-div>h1 {
     margin: 150px 0 75px 0;
-     font-size: 2em;
-   }
+    font-size: 2em;
+}
 
-   #aboutme {
-     width: 100%;
-     text-align: center; 
-   }
+#aboutme {
+    width: 100%;
+    text-align: center;
+}
 
-   #about-div > p {
+#about-div>p {
     margin: 50px 0 100px 100px;
     text-align: left;
     width: 50%;
     height: 200px;
     font-size: 1.25rem;
-   }
+}
 
 
-   /* 
+/*
 
-   SKILLS 
-   
-   */
-   .skills {
-     margin-top: 100px;
-     text-align: center;
-   }
+   SKILLS
 
-   .skills-icons {
-     margin: 200px 0 200px 0;
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-evenly;
-     flex: 0 1 200px;
-   }
-
-
-   /* 
-
-   WORK 
-   
    */
 
-   #work-div > h1 {
-     text-align: center;
-     font-size: 2em;
-     font-family: 'Montserrat', sans-serif;
-     margin-bottom: 150px;
-   }
+.skills {
+    margin-top: 100px;
+    text-align: center;
+}
 
-   .div-wrapper {
+.skills-icons {
+    margin: 200px 0 200px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-   }
+    flex: 0 1 200px;
+}
 
-   .work-row {
-     height: 25vh;
-     width: 25vh;
-     border: 2px solid black;
-     border-radius: 50px;
-   }
 
-   .work-row .side-project-image {
-      height: 100%;
-      width: 100%;
-      border-radius: 45px;
-   }
+/*
 
-   /*
+   WORK
+
+   */
+
+#work-div>h1 {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 150px;
+}
+
+.div-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.work-row {
+    height: 25vh;
+    width: 25vh;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.work-row .side-project-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 45px;
+}
+
+
+/*
 
    CONTACT
 
    */
 
-   #contact {
-     font-family: 'Montserrat', sans-serif;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-   }
+#contact {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-   #contact > h1 {
+#contact>h1 {
     margin: 200px 0 50px 0;
     font-size: 2em;
-   }
+}
 
-   #contact > p {
+#contact>p {
     font-size: 1.25em;
-   }
+}
 
-   #in-dev {
-     color: red;
-   }
+#in-dev {
+    color: red;
+}
 
 
-   /* 
-   
-   FOOTER 
-   
+/*
+
+   FOOTER
+
    */
-   footer {
-     margin-top: 150px;
-     padding: .25rem;
-     height: 300px;
-     font-family: 'Montserrat', sans-serif;
-     text-align: center;
-     background-color: rgb(31, 30, 30);
-     vertical-align: center;
-     color: white;
-     display: flex;
-     flex-flow: column nowrap;
-   }
 
-    footer > .images > .footer-images > img {
-        margin-top: 60px;
-        width: 45px;
-    }
+footer {
+    margin-top: 150px;
+    padding: .25rem;
+    height: 300px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: rgb(31, 30, 30);
+    vertical-align: center;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+}
 
-   footer > .copyright {
-       margin-top: auto;
-   }
+footer>.images>.footer-images>img {
+    margin-top: 60px;
+    width: 45px;
+}
 
-   footer > .copyright > p{
-      font-size: .65rem;
-   }
+footer>.copyright {
+    margin-top: auto;
+}
 
-   /* 
-   
- /$$      /$$ /$$$$$$$$ /$$$$$$$  /$$$$$$  /$$$$$$         /$$$$$$  /$$   /$$ /$$$$$$$$ /$$$$$$$  /$$$$$$ /$$$$$$$$  /$$$$$$ 
+footer>.copyright>p {
+    font-size: .65rem;
+}
+
+
+/*
+
+ /$$      /$$ /$$$$$$$$ /$$$$$$$  /$$$$$$  /$$$$$$         /$$$$$$  /$$   /$$ /$$$$$$$$ /$$$$$$$  /$$$$$$ /$$$$$$$$  /$$$$$$
 | $$$    /$$$| $$_____/| $$__  $$|_  $$_/ /$$__  $$       /$$__  $$| $$  | $$| $$_____/| $$__  $$|_  $$_/| $$_____/ /$$__  $$
 | $$$$  /$$$$| $$      | $$  \ $$  | $$  | $$  \ $$      | $$  \ $$| $$  | $$| $$      | $$  \ $$  | $$  | $$      | $$  \__/
-| $$ $$/$$ $$| $$$$$   | $$  | $$  | $$  | $$$$$$$$      | $$  | $$| $$  | $$| $$$$$   | $$$$$$$/  | $$  | $$$$$   |  $$$$$$ 
+| $$ $$/$$ $$| $$$$$   | $$  | $$  | $$  | $$$$$$$$      | $$  | $$| $$  | $$| $$$$$   | $$$$$$$/  | $$  | $$$$$   |  $$$$$$
 | $$  $$$| $$| $$__/   | $$  | $$  | $$  | $$__  $$      | $$  | $$| $$  | $$| $$__/   | $$__  $$  | $$  | $$__/    \____  $$
 | $$\  $ | $$| $$      | $$  | $$  | $$  | $$  | $$      | $$/$$ $$| $$  | $$| $$      | $$  \ $$  | $$  | $$       /$$  \ $$
 | $$ \/  | $$| $$$$$$$$| $$$$$$$/ /$$$$$$| $$  | $$      |  $$$$$$/|  $$$$$$/| $$$$$$$$| $$  | $$ /$$$$$$| $$$$$$$$|  $$$$$$/
-|__/     |__/|________/|_______/ |______/|__/  |__/       \____ $$$ \______/ |________/|__/  |__/|______/|________/ \______/ 
-                                                               \__/                                                                                                                                                                                     
-                                                                                                                          
+|__/     |__/|________/|_______/ |______/|__/  |__/       \____ $$$ \______/ |________/|__/  |__/|______/|________/ \______/
+                                                               \__/
+
    */
 
-   /* 
+
+/*
 
    Tablet Styles
 
    THIS'LL PROBABLY END UP GETTING DELETED SOON
 
    */
-   @media only screen and (max-width: 900px) {
 
-    #parallax > h1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 3em;
-      padding-top: 50%;
-      padding-bottom: 15px;
+@media only screen and (max-width: 900px) {
+    #parallax>h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        padding-top: 50%;
+        padding-bottom: 15px;
     }
-  
-    #parallax > p {
-      font-size: 1.25em; 
-      margin: 0;
-      }
-  
-    #about-div > h1 {
-      font-size: 2em;
+    #parallax>p {
+        font-size: 1.25em;
+        margin: 0;
     }
-  
+    #about-div>h1 {
+        font-size: 2em;
+    }
     #aboutme {
-      width: 100%;
-      text-align: center; 
+        width: 100%;
+        text-align: center;
     }
-  
-    #about-div > p {
-      display: flex;
-      justify-content: center;
-      width: 80%;
-      height: 200px;
-      font-size: 1.25rem;
+    #about-div>p {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        height: 200px;
+        font-size: 1.25rem;
     }
-  }
+}
 
-   /*
-   
+
+/*
+
    Mobile Style
-   
-   */
-@media only screen and (max-width: 700px) {
 
+   */
+
+@media only screen and (max-width: 700px) {
     /*
 
     If an error occurs copy the code
@@ -332,80 +342,67 @@ html, body {
     from parallax id
 
     */
-
-  #parallax > h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-    padding-top: 50%;
-    padding-bottom: 15px;
-    position: relative;
-    z-index: 5;
-  }
-
-  #parallax > p {
-    font-size: 1.25em; 
-    margin: 0;
-    position: relative;
-    z-index: 5;
-  }
-
-    #about-div > h1 {
-      font-size: 2em;
+    #parallax>h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        padding-top: 50%;
+        padding-bottom: 15px;
+        position: relative;
+        z-index: 5;
     }
-
+    #parallax>p {
+        font-size: 1.25em;
+        margin: 0;
+        position: relative;
+        z-index: 5;
+    }
+    #about-div>h1 {
+        font-size: 2em;
+    }
     #aboutme {
-      width: 100%;
-      text-align: center; 
+        width: 100%;
+        text-align: center;
     }
-
-    #about-div > p {
-      display: flex;
-      position: relative;
-      right: 25px;
-      justify-content: center;
-      width: 80%;
-      height: 200px;
-      font-size: 1.25rem;
-      padding-bottom: 100px;
+    #about-div>p {
+        display: flex;
+        position: relative;
+        right: 25px;
+        justify-content: center;
+        width: 80%;
+        height: 200px;
+        font-size: 1.25rem;
+        padding-bottom: 100px;
     }
-    
-  /* 
-  
-  NAV BAR 
-  
-  */
-  header {
-    display: none; 
-  }
-  
-  ul {
-    display: none;
-  }
+    /*
 
-  /* 
-  
-  Icons for nav bar 
-  
-  */
-  a {
-    display: none;
-  }
-  
-  a:hover {
-    display: none;
-  }
-  
-  .social-links {
-    display: none;
-    
-  }
-  
-  .icon {
-    display: none;
-   }
+  NAV BAR
 
+  */
+    header {
+        display: none;
+    }
+    ul {
+        display: none;
+    }
+    /*
+
+  Icons for nav bar
+
+  */
+    a {
+        display: none;
+    }
+    a:hover {
+        display: none;
+    }
+    .social-links {
+        display: none;
+    }
+    .icon {
+        display: none;
+    }
     footer {
         margin-top: 150px;
         padding: .25rem;
@@ -418,86 +415,77 @@ html, body {
         display: flex;
         flex-flow: column nowrap;
     }
-
-    footer > .images > .footer-images > img {
+    footer>.images>.footer-images>img {
         margin-top: 60px;
         width: 45px;
     }
-
-    footer > .copyright {
+    footer>.copyright {
         margin-top: auto;
     }
-
-    footer > .copyright > p{
+    footer>.copyright>p {
         font-size: .65rem;
     }
-
 }
 
-   /*
+
+/*
 
    SMALLER
    Mobile Style
-   
-   */
-   @media only screen and (max-width: 350px) {
 
+   */
+
+@media only screen and (max-width: 350px) {
     #parallax {
-      background-image: url("images/background.jpg");
-      min-height: 950px;
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 100%;
-      text-align: center;
-      display: block;
-      color: rgb(255, 255, 255);
-      font-family: 'Montserrat', sans-serif;
-      position: relative;
-      z-index: 3;
-    }
-  
-    #parallax::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background-color: rgb(1, 23, 82);
-      top: 0;
-      left: 0;
-      opacity: .2;
-      z-index: 3;
-    }
-  
-    #parallax > h1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 3em;
-      padding-top: 50%;
-      padding-bottom: 15px;
-      position: relative;
-      z-index: 5;
-    }
-  
-    #parallax > p {
-      font-size: 1.05em; 
-      margin: 0;
-      position: relative;
-      z-index: 5;
-    }
-  
-      #about-div > h1 {
-        font-size: 1.5em;
-      }
-  
-      #aboutme {
+        background-image: url("images/background.jpg");
+        min-height: 950px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
         width: 100%;
-      }
-  
-      #about-div > p {
+        text-align: center;
+        display: block;
+        color: rgb(255, 255, 255);
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        z-index: 3;
+    }
+    #parallax::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgb(1, 23, 82);
+        top: 0;
+        left: 0;
+        opacity: .2;
+        z-index: 3;
+    }
+    #parallax>h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        padding-top: 50%;
+        padding-bottom: 15px;
+        position: relative;
+        z-index: 5;
+    }
+    #parallax>p {
+        font-size: 1.05em;
+        margin: 0;
+        position: relative;
+        z-index: 5;
+    }
+    #about-div>h1 {
+        font-size: 1.5em;
+    }
+    #aboutme {
+        width: 100%;
+    }
+    #about-div>p {
         display: flex;
         position: relative;
         right: 25px;
@@ -505,59 +493,49 @@ html, body {
         width: 60%;
         height: 200px;
         font-size: .95rem;
-      }
-
-      /*
+    }
+    /*
 
       SKILLS
 
       */
-
-      .skills {
+    .skills {
         margin-top: 50px;
         text-align: center;
-      }
-   
-      .skills-icons {
+    }
+    .skills-icons {
         margin: 50px 0 100px 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         flex: 0 1 200px;
-      }
-      
-    /* 
-    
-    NAV BAR 
-    
+    }
+    /*
+
+    NAV BAR
+
     */
     header {
-      display: none; 
+        display: none;
     }
-    
     ul {
-      display: none;
+        display: none;
     }
-  
-    /* 
-    
-    Icons for nav bar 
-    
+    /*
+
+    Icons for nav bar
+
     */
     a {
-      display: none;
+        display: none;
     }
-    
     a:hover {
-      display: none;
+        display: none;
     }
-    
     .social-links {
-      display: none;
-      
+        display: none;
     }
-    
     .icon {
-      display: none;
-     }
-  }
+        display: none;
+    }
+}
