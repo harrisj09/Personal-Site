@@ -250,12 +250,12 @@ html, body {
      flex-flow: column nowrap;
    }
 
-   footer > div {
+    footer > .images > .footer-images {
+        width: 45px;
+    }
 
-   }
-
-   footer > .images > img {
-    width: 45px;
+    footer > img {
+        width: 45px;
    }
 
    footer > .copyright {
