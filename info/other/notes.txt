@@ -59,3 +59,16 @@ Have the nav bar go away after it reaches the about me section
   width: 100%;
   text-align: center;
 }
+
++----------------------------------------------+
+    /*
+      OLD COLOR
+    background-color: rgb(1, 23, 82);
+
+    */
+
+        /*
+          OLD COLOR
+        opacity: .2;
+
+        */
