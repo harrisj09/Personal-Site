@@ -231,6 +231,12 @@ html, body {
      color: red;
    }
 
+   #contact > .contact-body {
+       border: 2px solid black;
+       width: 800px;
+       height: 600px;
+   }
+
 
    /* 
    
