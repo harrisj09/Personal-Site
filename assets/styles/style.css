@@ -241,6 +241,12 @@ ul {
     color: red;
 }
 
+#contact > .contact-body {
+    display: flex;
+    border: 2px solid black;
+    height: 500px;
+    width: 800px;
+}
 
 /*
 
