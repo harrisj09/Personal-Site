@@ -421,6 +421,11 @@ footer>.copyright>p {
         display: flex;
         flex-flow: column nowrap;
     }
+
+    .footer-images {
+        text-decoration: none;
+    }
+
     footer>.images>.footer-images>img {
         margin-top: 60px;
         width: 45px;
