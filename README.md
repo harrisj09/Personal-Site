@@ -1,6 +1,6 @@
 # [Personal-Site](https://harrisj09.github.io/personal-site/)
 
-## Under a [new hoster and Domain](https://eager-jackson-4f1f70.netlify.com)
+## Under a [new hoster and Domain](https://jhhwebsite.netlify.com)
 
  A website I created from scratch and is being hosted on GitHub pages to display my work. I also treat this as if it's a project being worked on by a team (even though it's just me working on it) to also show that I can use version control and GitHub.
 
