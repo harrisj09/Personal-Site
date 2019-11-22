@@ -71,7 +71,7 @@ ul {
   */
 
 #parallax {
-    background-image: url("images/background.jpg");
+    background-image: url("../images/background.jpg");
     min-height: 1000px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -442,7 +442,7 @@ footer>.copyright>p {
 
 @media only screen and (max-width: 350px) {
     #parallax {
-        background-image: url("images/background.jpg");
+        background-image: url("../images/background.jpg");
         min-height: 950px;
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
