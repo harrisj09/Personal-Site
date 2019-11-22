@@ -1,11 +1,12 @@
 # [Personal-Site](https://harrisj09.github.io/personal-site/)
+ A website I created from scratch and is being hosted on GitHub pages to display my work.
 
-## Under a [new hoster and Domain](https://jhhwebsite.netlify.com)
+## [Under a new hoster and Domain](https://jhhwebsite.netlify.com)
+This is because I plan on implementing a contact form and possibly other backend technologies if needed.
 
- A website I created from scratch and is being hosted on GitHub pages to display my work. I also treat this as if it's a project being worked on by a team (even though it's just me working on it) to also show that I can use version control and GitHub.
 
  # For those who plan on using this web template.
-Credit is appreciated, but not required and the same goes for [donations.](paypal.me/8746) If you find an issue with the site create a pull request or post an issue. 
+Credit is appreciated, but not required. If you find an issue with the site create a pull request or post an issue.
 
 
 # Background information about the site
