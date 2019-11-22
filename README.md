@@ -1,4 +1,4 @@
-# [Personal-Site](https://harrisj09.github.io/personal-site/)
+# [Personal-Site](https://jhhwebsite.netlify.com)
  A website I created from scratch and is being hosted on GitHub pages to display my work.
 
 ## [Under a new hoster and Domain](https://jhhwebsite.netlify.com)
