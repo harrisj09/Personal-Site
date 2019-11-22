@@ -114,21 +114,19 @@ ul {
     margin: 0;
 }
 
-#parallax>.cta {
+/* CTA */
+#parallax .cta {
     position: relative;
     z-index: 5;
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(123, 178, 250);
-    border: none;
     border-radius: 10px;
     color: white;
     padding: 15px 120px;
+    margin: 20px 0 0 0;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 20px 2px;
-    cursor: pointer;
 }
 
 
