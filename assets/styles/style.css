@@ -115,7 +115,7 @@ ul {
 }
 
 /* CTA */
-#parallax .cta {
+.cta {
     position: relative;
     z-index: 5;
     font-family: 'Montserrat', sans-serif;
@@ -123,6 +123,22 @@ ul {
     border-radius: 10px;
     color: white;
     padding: 15px 120px;
+    opacity: .85;
+    margin: 20px 0 0 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta:hover {
+    position: relative;
+    z-index: 5;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(123, 178, 250);
+    border-radius: 10px;
+    color: white;
+    padding: 15px 120px;
+    opacity: 1;
     margin: 20px 0 0 0;
     text-align: center;
     text-decoration: none;
