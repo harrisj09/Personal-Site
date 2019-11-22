@@ -243,9 +243,12 @@ ul {
 
 #contact > .contact-body {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 65vh;
+    width: 50vw;
     border: 2px solid black;
-    height: 500px;
-    width: 800px;
+    border-radius: 50px;
 }
 
 /*
@@ -389,7 +392,7 @@ footer>.copyright>p {
     header {
         display: none;
     }
-    
+
     /*
 
   Icons for nav bar
@@ -520,5 +523,4 @@ footer>.copyright>p {
     .icon {
         display: none;
     }
-
 }
