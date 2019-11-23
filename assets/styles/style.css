@@ -256,7 +256,7 @@ ul {
 }
 
 #contact > .contact-body {
-    height: 65vh;
+    height: auto;
     width: 50vw;
     border-radius: 50px;
 }
