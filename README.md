@@ -1,7 +1,7 @@
 # [Personal-Site](https://jhhwebsite.netlify.com)
  A website I created from scratch and is being hosted on GitHub pages to display my work.
 
-## [Under a new hoster and Domain](https://jhhwebsite.netlify.com)
+## [Under new hosting and Domain](https://jhhwebsite.netlify.com)
 This is because I plan on implementing a contact form and possibly other backend technologies if needed.
 
 
