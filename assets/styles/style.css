@@ -266,7 +266,18 @@ ul {
 
 /* HTML FORMS */
 
+.input__box {
+    margin-top: 50px;
+    position: static;
+}
 
+.form__wrapper {
+
+}
+
+.form__input {
+
+}
 
 /*
 
