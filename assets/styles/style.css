@@ -256,9 +256,6 @@ ul {
 }
 
 #contact > .contact-body {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     height: 65vh;
     width: 50vw;
     border-radius: 50px;
@@ -266,13 +263,9 @@ ul {
 
 /* HTML FORMS */
 
-.input__box {
-    margin-top: 50px;
-    position: static;
-}
-
 .form__wrapper {
-
+    margin-top: 50px;
+    display: inline-block;
 }
 
 .form__input {
