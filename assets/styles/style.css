@@ -365,13 +365,34 @@ footer>.copyright>p {
    */
 
 @media only screen and (max-width: 700px) {
-    /*
+    #parallax {
+        background-image: url("../images/background.jpg");
+        min-height: 900px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        text-align: center;
+        display: block;
+        color: rgb(255, 255, 255);
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        z-index: 3;
+    }
 
-    If an error occurs copy the code
-    from the default media query
-    from parallax id
+    #parallax::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(22, 59, 83, 0.3);
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
 
-    */
     #parallax>h1 {
         display: flex;
         justify-content: center;
@@ -403,8 +424,28 @@ footer>.copyright>p {
         width: 80%;
         height: 200px;
         font-size: 1.25rem;
-        padding-bottom: 100px;
+        margin-bottom: 400px;
     }
+
+    /*
+
+    Skills
+
+     */
+
+    .skills {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .skills-icons {
+        margin: 100px 0 200px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex: 0 1 200px;
+    }
+
     /*
 
   NAV BAR
