@@ -265,11 +265,15 @@ ul {
 
 .form__wrapper {
     margin-top: 50px;
-    display: inline-block;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .form__input {
-
+    height: 50px;
+    width: 350px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
 }
 
 /*
@@ -289,6 +293,10 @@ footer {
     color: white;
     display: flex;
     flex-flow: column nowrap;
+}
+
+.footer-images {
+    text-decoration: none;
 }
 
 footer>.images>.footer-images>img {
