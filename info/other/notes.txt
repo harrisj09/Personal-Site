@@ -72,3 +72,18 @@ Have the nav bar go away after it reaches the about me section
         opacity: .2;
 
         */
+
++----------------------------------------------+
+
+BEM
+
+block - .block
+
+element - .block__element
+
+modifier - .block__element--modifier
+
+
++ Block is the base of the elements in it. Example is a div box
++ Element is the elements inside of the block (div)
++ Modifier is if there are changes to an element. 
