@@ -497,17 +497,7 @@ ul {
         background-image: url("../images/background.jpg");
         min-height: 950px;
         /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        text-align: center;
-        display: block;
-        color: rgb(255, 255, 255);
-        font-family: 'Montserrat', sans-serif;
-        position: relative;
-        z-index: 3;
-    }
+
     #parallax::after {
         content: "";
         display: block;
