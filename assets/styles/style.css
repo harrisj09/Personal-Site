@@ -152,22 +152,19 @@ ul {
 
   */
 
-#about-div {
+#about {
     margin: 150px 0 0 0;
+}
+
+
+/* Not working */
+#about > .about__title {
+    margin: 150px 0 75px 0;
+    font-size: 2em;
     font-family: 'Montserrat', sans-serif;
 }
 
-#about-div>h1 {
-    margin: 150px 0 75px 0;
-    font-size: 2em;
-}
-
-#aboutme {
-    width: 100%;
-    text-align: center;
-}
-
-#about-div>p {
+#about>.about__title--paragraph {
     margin: 50px 0 100px 100px;
     text-align: left;
     width: 50%;
@@ -356,14 +353,14 @@ footer>.footer__copyright>p {
         font-size: 1.25em;
         margin: 0;
     }
-    #about-div>h1 {
+    #about>.about__title {
         font-size: 2em;
     }
     #aboutme {
         width: 100%;
         text-align: center;
     }
-    #about-div>p {
+    #about>about__title--paragraph {
         display: flex;
         justify-content: center;
         width: 80%;
@@ -424,14 +421,14 @@ footer>.footer__copyright>p {
         position: relative;
         z-index: 5;
     }
-    #about-div>h1 {
+    #about>.about__title {
         font-size: 2em;
     }
     #aboutme {
         width: 100%;
         text-align: center;
     }
-    #about-div>p {
+    #about>about__title--paragraph {
         display: flex;
         position: relative;
         right: 25px;
@@ -552,13 +549,13 @@ footer>.footer__copyright>p {
         position: relative;
         z-index: 5;
     }
-    #about-div>h1 {
+    #about>.about__title {
         font-size: 1.5em;
     }
     #aboutme {
         width: 100%;
     }
-    #about-div>p {
+    #about>about__title--paragraph {
         display: flex;
         position: relative;
         right: 25px;
