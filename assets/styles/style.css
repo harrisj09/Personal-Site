@@ -286,7 +286,7 @@ ul {
 
    */
 
-footer {
+.footer {
     margin-top: 150px;
     padding: .25rem;
     height: 300px;
@@ -303,16 +303,16 @@ footer {
     text-decoration: none;
 }
 
-footer>.images>.footer__images>img {
+.footer__images>img {
     margin-top: 60px;
     width: 45px;
 }
 
-footer>.footer__copyright {
+.footer>.footer__copyright {
     margin-top: auto;
 }
 
-footer>.footer__copyright>p {
+.footer>.footer__copyright>p {
     font-size: .65rem;
 }
 
@@ -485,14 +485,10 @@ footer>.footer__copyright>p {
 
     */
 
-    .footer-images {
-        text-decoration: none;
-    }
-
-    footer>.copyright {
+    .footer>.copyright {
         margin-top: auto;
     }
-    footer>.copyright>p {
+    .footer>.copyright>p {
         font-size: .65rem;
     }
 }
@@ -555,7 +551,7 @@ footer>.footer__copyright>p {
     #aboutme {
         width: 100%;
     }
-    #about>about__title--paragraph {
+    #about>.about__title--paragraph {
         display: flex;
         position: relative;
         right: 25px;
