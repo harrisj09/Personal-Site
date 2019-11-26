@@ -77,13 +77,34 @@ Have the nav bar go away after it reaches the about me section
 
 BEM
 
+-----------
+NAMING
+
 block - .block
 
 element - .block__element
 
 modifier - .block__element--modifier
 
+-----------
+DEFENITIONS
 
-+ Block is the base of the elements in it. Example is a div box
-+ Element is the elements inside of the block (div)
-+ Modifier is if there are changes to an element. 
++ Block - is the base of the elements in it. Example is a div box
++ Element - is the elements inside of the block (div)
++ Modifier - is if there are changes to an element. 
+
+
+-----------
+EXAMPLES
+
+<div class="block">
+  This is my [B]lock
+  <p class="block__element">
+    this is my [E]lement
+  </p>
+  
+  <p class="block__element block__element--modifier">
+    this is my element with a [M]odifier
+  </p>
+</div>
+
