@@ -160,6 +160,7 @@ ul {
 /* Not working */
 #about > .about__title {
     margin: 150px 0 75px 0;
+    text-align: center;
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
 }
