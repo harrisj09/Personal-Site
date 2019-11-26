@@ -156,8 +156,6 @@ ul {
     margin: 150px 0 0 0;
 }
 
-
-/* Not working */
 #about > .about__title {
     margin: 150px 0 75px 0;
     text-align: center;
@@ -361,7 +359,7 @@ ul {
         width: 100%;
         text-align: center;
     }
-    #about>about__title--paragraph {
+    #about>.about__title--paragraph {
         display: flex;
         justify-content: center;
         width: 80%;
@@ -429,7 +427,7 @@ ul {
         width: 100%;
         text-align: center;
     }
-    #about>about__title--paragraph {
+    #about>.about__title--paragraph {
         display: flex;
         position: relative;
         right: 25px;
@@ -440,6 +438,8 @@ ul {
         margin-bottom: 400px;
     }
 
+
+    
     /*
 
     Skills
