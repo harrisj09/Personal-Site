@@ -178,12 +178,7 @@ ul {
 
    */
 
-.skills {
-    margin-top: 100px;
-    text-align: center;
-}
-
-.skills-icons {
+.skills__wrapper {
     margin: 200px 0 200px 0;
     display: flex;
     flex-wrap: wrap;
@@ -446,12 +441,7 @@ ul {
 
      */
 
-    .skills {
-        margin-top: 100px;
-        text-align: center;
-    }
-
-    .skills-icons {
+    .skills__wrapper {
         margin: 100px 0 200px 0;
         display: flex;
         flex-wrap: wrap;
@@ -566,17 +556,15 @@ ul {
       SKILLS
 
       */
-    .skills {
-        margin-top: 50px;
-        text-align: center;
-    }
-    .skills-icons {
+
+    .skills__wrapper {
         margin: 50px 0 100px 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         flex: 0 1 200px;
     }
+    
     /*
 
     NAV BAR
