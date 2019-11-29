@@ -179,7 +179,7 @@ ul {
    */
 
 .skills__wrapper {
-    margin: 200px 0 200px 0;
+    margin: 100px 0 200px 0;
     display: grid;
     grid-template-columns: 155px 155px 155px 155px 155px 225px;
     grid-template-rows: 155px 155px;
@@ -328,13 +328,12 @@ ul {
 
 /*
 
-   Tablet Styles
+   Smaller Laptops Styles
 
-   THIS'LL PROBABLY END UP GETTING DELETED SOON
 
    */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1050px) {
     #parallax>h1 {
         display: flex;
         justify-content: center;
@@ -360,6 +359,14 @@ ul {
         width: 80%;
         height: 200px;
         font-size: 1.25rem;
+    }
+
+    .skills__wrapper {
+        margin: 100px 0 200px 0;
+        display: grid;
+        grid-template-columns: 155px 155px 225px;
+        grid-template-rows: 155px 155px 155px;
+        justify-content: space-evenly;
     }
 }
 
@@ -442,7 +449,7 @@ ul {
      */
 
     .skills__wrapper {
-        margin: 200px 0 200px 0;
+        margin: 100px 0 200px 0;
         display: grid;
         grid-template-columns: 155px 225px;
         grid-template-rows: 155px 155px 155px;
