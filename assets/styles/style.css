@@ -285,6 +285,7 @@ ul {
 
 .form__input--submit {
     font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25rem;
     color: white;
     background-color: #302D2D;
 }
