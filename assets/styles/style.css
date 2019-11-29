@@ -456,6 +456,9 @@ ul {
         justify-content: space-evenly;
     }
 
+    .skills__row--remove {
+        display: none;
+    }
     /*
 
   NAV BAR
@@ -547,6 +550,8 @@ ul {
     /*
 
       SKILLS
+    
+      Have the height be rewritten for the logos that are too big
 
       */
 
@@ -556,6 +561,10 @@ ul {
         grid-template-columns: 155px;
         grid-template-rows: 155px 155px 155px 155px 155px 155px;
         justify-content: space-evenly;
+    }
+
+    .skills__row--remove {
+        display: none;
     }
     
     /*
@@ -581,4 +590,5 @@ ul {
     .icon {
         display: none;
     }
+
 }
