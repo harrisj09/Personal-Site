@@ -181,10 +181,11 @@ ul {
 .skills__wrapper {
     margin: 100px 0 200px 0;
     display: grid;
-    grid-template-columns: 155px 155px 155px 155px 155px 225px;
-    grid-template-rows: 155px 155px;
+    grid-template-columns: 155px 155px 225px;
+    grid-template-rows: 155px 155px 155px;
     justify-content: space-evenly;
 }
+.skills__row {}
 
 
 /*
