@@ -185,7 +185,6 @@ ul {
     grid-template-rows: 155px 155px 155px;
     justify-content: space-evenly;
 }
-.skills__row {}
 
 
 /*
@@ -234,9 +233,14 @@ ul {
     align-items: center;
 }
 
-#contact>h1 {
-    margin: 200px 0 50px 0;
+.cotact__title {
+    color: #564F4F;
+    margin: 100px 0 0 0;
+    padding-bottom: 10px;
+    width: 400px;
+    text-align: center;
     font-size: 2em;
+    border-bottom: 3px solid #707070;
 }
 
 #contact>p {
@@ -265,9 +269,9 @@ ul {
     height: 50px;
     width: 350px;
     margin-bottom: 30px;
-    border-radius: 25px;
+    border-radius: 15px;
     font-size: 1.5rem;
-    border-color: black;
+    border-color: #707070;
 }
 
 .form__input--message {
