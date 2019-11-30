@@ -583,6 +583,16 @@ ul {
     .skills__row--remove {
         display: none;
     }
+
+    /* 
+    
+    Contact 
+    
+    */
+    .form__input--message {
+        width: 60vw;
+        padding-bottom: 200px;
+    }
     
     /*
 
