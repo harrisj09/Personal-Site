@@ -6,6 +6,9 @@ const project4Desc = document.getElementById("project4");
 const project5Desc = document.getElementById("project5");
 const project6Desc = document.getElementById("project6");
 
+//remove this later
+console.log("Page Loaded");
+
 function setText() {
     console.log();
 }
