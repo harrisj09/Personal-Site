@@ -17,6 +17,8 @@ const projects = [...document.querySelectorAll('[data-project]')];
 projects.forEach(project => project.addEventListener('click', e => {
   console.log(`you clicked project-${e.target.dataset.project}`);
 }));
+
+https://codepen.io/roufs_designs/pen/PowYMzz?editors=1111
 */
 
 //Event listeners
