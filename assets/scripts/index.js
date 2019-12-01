@@ -19,6 +19,7 @@ projects.forEach(project => project.addEventListener('click', e => {
 }));
 
 https://codepen.io/roufs_designs/pen/PowYMzz?editors=1111
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes 
 */
 
 //Event listeners
