@@ -1,5 +1,22 @@
 /* 
 Handles mobile menu and descriptions of project displays
+
+
+
+
+<div class="project" data-project="1"></div>
+<div class="project" data-project="2"></div>
+<div class="project" data-project="3"></div>
+<div class="project" data-project="4"></div>
+<div class="project" data-project="5"></div>
+<div class="project" data-project="6"></div>
+
+
+const projects = [...document.querySelectorAll('[data-project]')];
+
+projects.forEach(project => project.addEventListener('click', e => {
+  console.log(`you clicked project-${e.target.dataset.project}`);
+}));
 */
 
 //Event listeners
@@ -38,6 +55,6 @@ function project6Box() {
     console.log("project6 pressed");
 }
 
-function setText(projectChoice) {
+function setText() {
     
 }
