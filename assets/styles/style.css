@@ -269,6 +269,7 @@ ul {
 
 .form__input--message {
     width: 50vw;
+    font-family: 'Ubuntu', sans-serif;
     padding-bottom: 200px;
 }
 
@@ -278,16 +279,12 @@ ul {
     font-size: 1.25rem;
 }
 
-
-/*.form__input--message::placeholder {
-    
-} */
-
 .form__input--submit {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.25rem;
     color: white;
     background-color: #302D2D;
+    
 }
 
 /*
