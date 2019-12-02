@@ -208,8 +208,9 @@ ul {
 }
 
 .work__row {
-    height: 25vh;
-    width: 25vh;
+    margin-top: 10px;
+    height: 20vh;
+    width: 20vh;
     border: 2px solid black;
     border-radius: 50px;
 }
