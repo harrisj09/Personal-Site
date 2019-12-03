@@ -1,0 +1,18 @@
+/* Variables */
+$primaryTitleFont: 3em;
+$primaryParagraphFont: 1.25em;
+$backgroundPath: url("../images/background.jpg");
+
+/* Linking */
+@import "./hero";
+@import "./about";
+@import "./work";
+@import "./contact";
+@import "./footer";
+
+/* Base Attributes */
+html,
+body {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
