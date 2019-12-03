@@ -102,7 +102,7 @@ HERO
 
 /* Media Queries */
 @media only screen and (max-width: 1050px) {
-    .hero > .hero__title {
+    .hero__title {
         @include flex();
         font-size: 3em;
         padding-top: 50%;
@@ -142,7 +142,7 @@ HERO
         z-index: 3;
     }
 
-    .hero > .hero__title {
+    .hero__title {
         @include flex();
         font-size: 3em;
         padding-top: 50%;
@@ -183,7 +183,7 @@ HERO
         opacity: .2;
         z-index: 3;
     }
-    .hero > .hero__title {
+    .hero__title {
         @include flex();
         font-size: 3em;
         padding-top: 50%;

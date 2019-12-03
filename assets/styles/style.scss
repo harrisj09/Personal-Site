@@ -16,6 +16,11 @@ For some odd reason I get an error about the mixin being used in other files.
     align-items: $align;
 }
 
+@mixin widthAndHeight($width: 100%, $height: 100%) {
+    height: $height;
+    width: $width;
+}
+
 @mixin ctaPreFab($opacity: 1) {
     text-align: center;
     text-decoration: none;

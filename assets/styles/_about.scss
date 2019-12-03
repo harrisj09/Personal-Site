@@ -2,14 +2,14 @@
     margin: 150px 0 0 0;
 }
 
-.about > .about__title {
+.about__title {
     margin: 150px 0 75px 0;
     text-align: center;
     font-size: 2em;
     font-family: $baseFont;
 }
 
-.about>.about__title--paragraph {
+.about__title--paragraph {
     margin: 50px 0 100px 100px;
     text-align: left;
     width: 50%;
@@ -35,7 +35,7 @@
         width: 100%;
         text-align: center;
     }
-    .about>.about__title--paragraph {
+    .about__title--paragraph {
         display: flex;
         justify-content: center;
         width: 80%;
@@ -54,14 +54,14 @@
 }
 
 @media only screen and (max-width: 700px) { 
-    .about>.about__title {
+    .about__title {
         font-size: 2em;
     }
     .aboutme {
         width: 100%;
         text-align: center;
     }
-    .about>.about__title--paragraph {
+    .about__title--paragraph {
         display: flex;
         position: relative;
         right: 25px;
@@ -82,17 +82,17 @@
 }
 
 @media only screen and (max-width: 370px) { 
-    .about>.about__title {
+    .about__title {
         font-size: 1.5em;
     }
     .aboutme {
         width: 100%;
     }
-    .about>.about__title--paragraph {
+    .about__title--paragraph {
         display: flex;
         position: relative;
-        right: 25px;
         justify-content: center;
+        right: 25px;
         width: 60%;
         height: 200px;
         font-size: .95rem;

@@ -24,7 +24,7 @@
     margin-top: auto;
 }
 
-.footer>.footer__copyright>p {
+.footer__copyright>p {
     font-size: .65rem;
 }
 
@@ -33,10 +33,10 @@
 }
 
 @media only screen and (max-width: 700px) { 
-    .footer>.copyright {
+    .copyright {
         margin-top: auto;
     }
-    .footer>.copyright>p {
+    .copyright>p {
         font-size: .65rem;
     }
 }

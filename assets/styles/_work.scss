@@ -6,9 +6,8 @@
 }
 
 .work__wrapper {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    @include flex(space-evenly, center);
 }
 
 .work__row {
