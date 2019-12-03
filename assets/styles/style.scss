@@ -1,11 +1,5 @@
-/* Variables */
-$primaryTitleFont: 3em;
-$primaryParagraphFont: 1.25em;
-$backgroundPath: url("../images/background.jpg");
-$baseFont: 'Montserrat', sans-serif;
-$formFont: 'Ubuntu', sans-serif;
-
 /* Linking */
+@import "./variables";
 @import "./hero";
 @import "./about";
 @import "./work";
@@ -13,20 +7,28 @@ $formFont: 'Ubuntu', sans-serif;
 @import "./footer";
 
 /* Mixins 
-For some odd reason I cant use mixins in other files
-Ill find a fix later but for now im just gonna leave these both in the classes so when I do find a fix
-I can just remove the ones in the other files
+For some odd reason I get an error about the mixin being used in other files.
 */
-@mixin flexCenter {
+
+@mixin flex($justify: center, $align: center) {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: $justify;
+    align-items: $align;
 }
 
-@mixin ctaPreFab {
+@mixin ctaPreFab($opacity: 1) {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    position: relative;
+    z-index: 5;
+    font-family: $baseFont;
+    background-color: rgb(123, 178, 250);
+    border-radius: 10px;
+    color: white;
+    padding: 15px 120px;
+    margin: 20px 0 0 0;
+    opacity: $opacity;
 }
 
 /* Base Attributes */

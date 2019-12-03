@@ -1,30 +1,3 @@
-/* Mixins */
-@mixin flexCenter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-@mixin flex($justify: center, $align: center) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
-}
-
-@mixin ctaPreFab {
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    z-index: 5;
-    font-family: $baseFont;
-    background-color: rgb(123, 178, 250);
-    border-radius: 10px;
-    color: white;
-    padding: 15px 120px;
-    margin: 20px 0 0 0;
-}
-
 /* Nav Bar */
 header {
     position: fixed;
@@ -108,12 +81,12 @@ HERO
     }
 .hero__cta {
     opacity: .85;
-    @include ctaPreFab();
+    @include ctaPreFab(.85);
 }
 
 .hero__cta:hover {
     opacity: 1;
-    @include ctaPreFab();
+    @include ctaPreFab(1);
     }
 }
 

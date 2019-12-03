@@ -1,4 +1,3 @@
-/* Variables */
 /* Linking */
 /* Mixins */
 /* Nav Bar */
@@ -575,8 +574,6 @@ HERO
 
 /* Mixins 
 For some odd reason I cant use mixins in other files
-Ill find a fix later but for now im just gonna leave these both in the classes so when I do find a fix
-I can just remove the ones in the other files
 */
 /* Base Attributes */
 html,
