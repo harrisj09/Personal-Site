@@ -30,11 +30,15 @@
 
 /* Media Queries */
 @media only screen and (max-width: 1050px) {
-
 }
 
 @media only screen and (max-width: 700px) { 
-
+    .footer>.copyright {
+        margin-top: auto;
+    }
+    .footer>.copyright>p {
+        font-size: .65rem;
+    }
 }
 
 @media only screen and (max-width: 370px) { 
