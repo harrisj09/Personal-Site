@@ -70,7 +70,7 @@ ul {
 
   */
 
-#parallax {
+.hero {
     background-image: url("../images/background.jpg");
     min-height: 1000px;
     /* Create the parallax scrolling effect */
@@ -86,7 +86,7 @@ ul {
     z-index: 3;
 }
 
-#parallax::after {
+.hero::after {
     content: "";
     display: block;
     width: 100%;
@@ -98,24 +98,24 @@ ul {
     z-index: 3;
 }
 
-#parallax>h1 {
+.hero > .hero__title {
     position: relative;
     z-index: 5;
     margin: 0;
-    font-size: 5em;
+    font-size: 3em;
     padding-top: 15%;
     padding-bottom: 15px;
 }
 
-#parallax>p {
+.hero__title--sub-title {
     position: relative;
     z-index: 5;
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin: 0;
 }
 
-/* CTA */
-.cta {
+/* hero__cta */
+.hero__cta {
     position: relative;
     z-index: 5;
     font-family: 'Montserrat', sans-serif;
@@ -130,7 +130,7 @@ ul {
     display: inline-block;
 }
 
-.cta:hover {
+.hero__cta:hover {
     position: relative;
     z-index: 5;
     font-family: 'Montserrat', sans-serif;
@@ -152,18 +152,18 @@ ul {
 
   */
 
-#about {
+.about {
     margin: 150px 0 0 0;
 }
 
-#about > .about__title {
+.about > .about__title {
     margin: 150px 0 75px 0;
     text-align: center;
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
 }
 
-#about>.about__title--paragraph {
+.about>.about__title--paragraph {
     margin: 50px 0 100px 100px;
     text-align: left;
     width: 50%;
@@ -194,7 +194,7 @@ ul {
 
    */
 
-#work>h1 {
+.work__title {
     text-align: center;
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
@@ -215,7 +215,7 @@ ul {
     border-radius: 50px;
 }
 
-.work__row .side-project-image {
+.side-project-image {
     height: 100%;
     width: 100%;
     border-radius: 45px;
@@ -228,7 +228,7 @@ ul {
 
    */
 
-#contact {
+.contact {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
@@ -245,7 +245,7 @@ ul {
     border-bottom: 3px solid #707070;
 }
 
-#contact > .contact-body {
+.contact__body {
     height: auto;
     width: 50vw;
     border-radius: 50px;
@@ -316,7 +316,7 @@ ul {
     width: 45px;
 }
 
-.footer>.footer__copyright {
+.footer__copyright {
     margin-top: auto;
 }
 
@@ -348,7 +348,7 @@ ul {
    */
 
 @media only screen and (max-width: 1050px) {
-    #parallax>h1 {
+    .hero > .hero__title {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -356,18 +356,18 @@ ul {
         padding-top: 50%;
         padding-bottom: 15px;
     }
-    #parallax>p {
+    .hero__title--sub-title {
         font-size: 1.25em;
         margin: 0;
     }
-    #about>.about__title {
+    .about>.about__title {
         font-size: 2em;
     }
-    #aboutme {
+    .aboutme {
         width: 100%;
         text-align: center;
     }
-    #about>.about__title--paragraph {
+    .about>.about__title--paragraph {
         display: flex;
         justify-content: center;
         width: 80%;
@@ -393,7 +393,7 @@ ul {
    */
 
 @media only screen and (max-width: 700px) {
-    #parallax {
+    .hero {
         background-image: url("../images/background.jpg");
         min-height: 900px;
         /* Create the parallax scrolling effect */
@@ -409,7 +409,7 @@ ul {
         z-index: 3;
     }
 
-    #parallax::after {
+    .hero::after {
         content: "";
         display: block;
         width: 100%;
@@ -421,7 +421,7 @@ ul {
         z-index: 3;
     }
 
-    #parallax>h1 {
+    .hero > .hero__title {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -431,20 +431,20 @@ ul {
         position: relative;
         z-index: 5;
     }
-    #parallax>p {
+    .hero__title--sub-title {
         font-size: 1.25em;
         margin: 0;
         position: relative;
         z-index: 5;
     }
-    #about>.about__title {
+    .about>.about__title {
         font-size: 2em;
     }
-    #aboutme {
+    .aboutme {
         width: 100%;
         text-align: center;
     }
-    #about>.about__title--paragraph {
+    .about>.about__title--paragraph {
         display: flex;
         position: relative;
         right: 25px;
@@ -519,7 +519,7 @@ ul {
 
 @media only screen and (max-width: 370px) {
 
-    #parallax::after {
+    .hero::after {
         content: "";
         display: block;
         width: 100%;
@@ -531,7 +531,7 @@ ul {
         opacity: .2;
         z-index: 3;
     }
-    #parallax>h1 {
+    .hero > .hero__title {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -541,19 +541,19 @@ ul {
         position: relative;
         z-index: 5;
     }
-    #parallax>p {
+    .hero__title--sub-title {
         font-size: 1.05em;
         margin: 0;
         position: relative;
         z-index: 5;
     }
-    #about>.about__title {
+    .about>.about__title {
         font-size: 1.5em;
     }
-    #aboutme {
+    .aboutme {
         width: 100%;
     }
-    #about>.about__title--paragraph {
+    .about>.about__title--paragraph {
         display: flex;
         position: relative;
         right: 25px;
