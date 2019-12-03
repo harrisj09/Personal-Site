@@ -1,0 +1,66 @@
+@mixin flex($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin widthAndHeight($width: 100%, $height: 100%) {
+    height: $height;
+    width: $width;
+}
+
+@mixin ctaPreFab($opacity: 1) {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 5;
+    font-family: $baseFont;
+    background-color: rgb(123, 178, 250);
+    border-radius: 10px;
+    color: white;
+    padding: 15px 120px;
+    margin: 20px 0 0 0;
+    opacity: $opacity;
+}
+
+.footer {
+    margin-top: 150px;
+    padding: .25rem;
+    height: 300px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: rgb(31, 30, 30);
+    vertical-align: center;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.footer__images {
+    text-decoration: none;
+}
+
+.footer__images>img {
+    margin-top: 60px;
+    width: 45px;
+}
+
+.footer__copyright {
+    margin-top: auto;
+}
+
+.footer__copyright>p {
+    font-size: .65rem;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 700px) { 
+    .copyright {
+        margin-top: auto;
+    }
+    .copyright>p {
+        font-size: .65rem;
+    }
+}
