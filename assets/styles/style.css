@@ -1,66 +1,78 @@
+<<<<<<< HEAD
 /* Linking */
 /* Mixins */
 /* Nav Bar */
+=======
+html,
+body {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+
+/*
+
+  NAV BAR
+
+  */
+
+>>>>>>> parent of cf9106c... Base SASS
 header {
-  position: fixed;
-  z-index: 5;
-  top: 0;
-  width: 100%;
-  background: #00000040;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+    background: #00000040;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
+
+/*
+
+  Icons for nav bar
+
+  */
+
 .nav-bar-icons {
-  display: block;
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  padding: 2rem;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 2rem;
+    transition: all .5s ease-in-out;
 }
 
 .nav-bar-icons:hover {
-  background: #fcfcfc;
-  color: black;
+    background: #fcfcfc;
+    color: black;
 }
 
 .social-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 2rem;
+    display: flex;
+    margin-right: 2rem;
 }
 
 .icon {
-  margin-left: .2rem;
+    margin-left: .2rem;
 }
 
-.icon > img {
-  width: 60px;
+.icon>img {
+    width: 60px;
 }
 
-/* 
 
-HERO 
+/*
 
+<<<<<<< HEAD
 */
 .hero {
   background-image: url("../images/background.jpg");
@@ -123,54 +135,15 @@ HERO
   padding: 15px 120px;
   margin: 20px 0 0 0;
 }
+=======
+  HERO
+>>>>>>> parent of cf9106c... Base SASS
 
-.hero::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: rgba(22, 59, 83, 0.4);
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
+  */
 
-/* Media Queries */
-@media only screen and (max-width: 1050px) {
-  .hero > .hero__title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 3em;
-    padding-top: 50%;
-    padding-bottom: 15px;
-  }
-  .hero__title--sub-title {
-    font-size: 1.25em;
-    margin: 0;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  header {
-    display: none;
-  }
-  .social-links {
-    display: none;
-  }
-  .icon {
-    display: none;
-  }
-  .hero {
+.hero {
     background-image: url("../images/background.jpg");
-    min-height: 900px;
+    min-height: 1000px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -178,103 +151,118 @@ HERO
     width: 100%;
     text-align: center;
     display: block;
+<<<<<<< HEAD
     color: white;
     font-family: "Montserrat", sans-serif;
+=======
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+>>>>>>> parent of cf9106c... Base SASS
     position: relative;
     z-index: 3;
-  }
-  .hero > .hero__title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 3em;
-    padding-top: 50%;
-    padding-bottom: 15px;
+}
+
+.hero::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(22, 59, 83, 0.4);
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.hero > .hero__title {
     position: relative;
     z-index: 5;
-  }
-  .hero__title--sub-title {
+    margin: 0;
+    font-size: 3em;
+    padding-top: 15%;
+    padding-bottom: 15px;
+}
+
+.hero__title--sub-title {
+    position: relative;
+    z-index: 5;
     font-size: 1.25em;
     margin: 0;
-    position: relative;
-    z-index: 5;
-  }
-  .hero::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(22, 59, 83, 0.3);
-    top: 0;
-    left: 0;
-    z-index: 3;
-  }
 }
 
-@media only screen and (max-width: 370px) {
-  .hero::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #011752;
-    top: 0;
-    left: 0;
-    opacity: .2;
-    z-index: 3;
-  }
-  .hero > .hero__title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 3em;
-    padding-top: 50%;
-    padding-bottom: 15px;
+/* hero__cta */
+.hero__cta {
     position: relative;
     z-index: 5;
-  }
-  .hero__title--sub-title {
-    font-size: 1.05em;
-    margin: 0;
-    position: relative;
-    z-index: 5;
-  }
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(123, 178, 250);
+    border-radius: 10px;
+    color: white;
+    padding: 15px 120px;
+    opacity: .85;
+    margin: 20px 0 0 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
+
+.hero__cta:hover {
+    position: relative;
+    z-index: 5;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(123, 178, 250);
+    border-radius: 10px;
+    color: white;
+    padding: 15px 120px;
+    opacity: 1;
+    margin: 20px 0 0 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/*
+
+  ABOUT SECTION
+
+  */
 
 .about {
-  margin: 150px 0 0 0;
+    margin: 150px 0 0 0;
 }
 
 .about > .about__title {
+<<<<<<< HEAD
   margin: 150px 0 75px 0;
   text-align: center;
   font-size: 2em;
   font-family: "Montserrat", sans-serif;
+=======
+    margin: 150px 0 75px 0;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+>>>>>>> parent of cf9106c... Base SASS
 }
 
-.about > .about__title--paragraph {
-  margin: 50px 0 100px 100px;
-  text-align: left;
-  width: 50%;
-  height: 200px;
-  font-size: 1.25rem;
+.about>.about__title--paragraph {
+    margin: 50px 0 100px 100px;
+    text-align: left;
+    width: 50%;
+    height: 200px;
+    font-size: 1.25rem;
 }
+
+
+/*
+
+   SKILLS
+
+   */
 
 .skills__wrapper {
+<<<<<<< HEAD
   margin: 100px 0 200px 0;
   grid-gap: 50px;
   display: -ms-grid;
@@ -405,33 +393,51 @@ HERO
   font-size: 2em;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 150px;
+=======
+    margin: 100px 0 200px 0;
+    grid-gap: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly;
+}
+
+
+/*
+
+   WORK
+
+   */
+
+.work__title {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 150px;
+>>>>>>> parent of cf9106c... Base SASS
 }
 
 .work__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .work__row {
-  margin-top: 10px;
-  height: 20vh;
-  width: 20vh;
-  border: 2px solid black;
-  border-radius: 50px;
+    margin-top: 10px;
+    height: 20vh;
+    width: 20vh;
+    border: 2px solid black;
+    border-radius: 50px;
 }
 
 .side-project-image {
-  height: 100%;
-  width: 100%;
-  border-radius: 45px;
+    height: 100%;
+    width: 100%;
+    border-radius: 45px;
 }
 
+<<<<<<< HEAD
 .contact {
   font-family: "Montserrat", sans-serif;
   display: -webkit-box;
@@ -444,46 +450,57 @@ HERO
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+
+/*
+
+   CONTACT
+
+   */
+
+.contact {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+>>>>>>> parent of cf9106c... Base SASS
 }
 
 .cotact__title {
-  color: #564F4F;
-  margin: 200px 0 0 0;
-  padding-bottom: 10px;
-  width: 50vw;
-  text-align: center;
-  font-size: 2em;
-  border-bottom: 3px solid #707070;
+    color: #564F4F;
+    margin: 200px 0 0 0;
+    padding-bottom: 10px;
+    width: 50vw;
+    text-align: center;
+    font-size: 2em;
+    border-bottom: 3px solid #707070;
 }
 
 .contact__body {
-  height: auto;
-  width: 50vw;
-  border-radius: 50px;
+    height: auto;
+    width: 50vw;
+    border-radius: 50px;
 }
 
 /* HTML FORMS */
+
 .form__wrapper {
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .form__input {
-  height: 50px;
-  width: 50vw;
-  margin-bottom: 30px;
-  border-radius: 5px;
-  font-size: 1.5rem;
-  border-color: #707070;
+    height: 50px;
+    width: 50vw;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    border-color: #707070;
 }
 
 .form__input--message {
+<<<<<<< HEAD
   width: 50vw;
   font-family: "Ubuntu", sans-serif;
   padding-bottom: 200px;
@@ -527,41 +544,64 @@ HERO
   }
 }
 
+=======
+    width: 50vw;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 200px;
+}
+
+.form__input::placeholder {
+    padding-left: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25rem;
+}
+
+.form__input--submit {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25rem;
+    color: white;
+    background-color: #302D2D;
+    
+}
+
+/*
+
+   FOOTER
+
+   */
+
+>>>>>>> parent of cf9106c... Base SASS
 .footer {
-  margin-top: 150px;
-  padding: .25rem;
-  height: 300px;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  background-color: #1f1e1e;
-  vertical-align: center;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+    margin-top: 150px;
+    padding: .25rem;
+    height: 300px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: rgb(31, 30, 30);
+    vertical-align: center;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .footer__images {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-.footer__images > img {
-  margin-top: 60px;
-  width: 45px;
+.footer__images>img {
+    margin-top: 60px;
+    width: 45px;
 }
 
 .footer__copyright {
-  margin-top: auto;
+    margin-top: auto;
 }
 
-.footer > .footer__copyright > p {
-  font-size: .65rem;
+.footer>.footer__copyright>p {
+    font-size: .65rem;
 }
 
+<<<<<<< HEAD
 /* Media Queries */
 @media only screen and (max-width: 700px) {
   .footer > .copyright {
@@ -582,3 +622,298 @@ body {
   scroll-behavior: smooth;
 }
 /*# sourceMappingURL=style.css.map */
+=======
+
+/*
+
+ /$$      /$$ /$$$$$$$$ /$$$$$$$  /$$$$$$  /$$$$$$         /$$$$$$  /$$   /$$ /$$$$$$$$ /$$$$$$$  /$$$$$$ /$$$$$$$$  /$$$$$$
+| $$$    /$$$| $$_____/| $$__  $$|_  $$_/ /$$__  $$       /$$__  $$| $$  | $$| $$_____/| $$__  $$|_  $$_/| $$_____/ /$$__  $$
+| $$$$  /$$$$| $$      | $$  \ $$  | $$  | $$  \ $$      | $$  \ $$| $$  | $$| $$      | $$  \ $$  | $$  | $$      | $$  \__/
+| $$ $$/$$ $$| $$$$$   | $$  | $$  | $$  | $$$$$$$$      | $$  | $$| $$  | $$| $$$$$   | $$$$$$$/  | $$  | $$$$$   |  $$$$$$
+| $$  $$$| $$| $$__/   | $$  | $$  | $$  | $$__  $$      | $$  | $$| $$  | $$| $$__/   | $$__  $$  | $$  | $$__/    \____  $$
+| $$\  $ | $$| $$      | $$  | $$  | $$  | $$  | $$      | $$/$$ $$| $$  | $$| $$      | $$  \ $$  | $$  | $$       /$$  \ $$
+| $$ \/  | $$| $$$$$$$$| $$$$$$$/ /$$$$$$| $$  | $$      |  $$$$$$/|  $$$$$$/| $$$$$$$$| $$  | $$ /$$$$$$| $$$$$$$$|  $$$$$$/
+|__/     |__/|________/|_______/ |______/|__/  |__/       \____ $$$ \______/ |________/|__/  |__/|______/|________/ \______/
+                                                               \__/
+
+   */
+
+
+/*
+
+   Smaller Laptops Styles
+
+
+   */
+
+@media only screen and (max-width: 1050px) {
+    .hero > .hero__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        padding-top: 50%;
+        padding-bottom: 15px;
+    }
+    .hero__title--sub-title {
+        font-size: 1.25em;
+        margin: 0;
+    }
+    .about>.about__title {
+        font-size: 2em;
+    }
+    .aboutme {
+        width: 100%;
+        text-align: center;
+    }
+    .about>.about__title--paragraph {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        height: 200px;
+        font-size: 1.25rem;
+    }
+
+    .skills__wrapper {
+        margin: 100px 0 200px 0;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        justify-content: space-evenly;
+        grid-gap: 50px;
+    }
+}
+
+
+/*
+
+   Mobile Style
+
+   */
+
+@media only screen and (max-width: 700px) {
+    .hero {
+        background-image: url("../images/background.jpg");
+        min-height: 900px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        text-align: center;
+        display: block;
+        color: rgb(255, 255, 255);
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        z-index: 3;
+    }
+
+    .hero::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(22, 59, 83, 0.3);
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+
+    .hero > .hero__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        padding-top: 50%;
+        padding-bottom: 15px;
+        position: relative;
+        z-index: 5;
+    }
+    .hero__title--sub-title {
+        font-size: 1.25em;
+        margin: 0;
+        position: relative;
+        z-index: 5;
+    }
+    .about>.about__title {
+        font-size: 2em;
+    }
+    .aboutme {
+        width: 100%;
+        text-align: center;
+    }
+    .about>.about__title--paragraph {
+        display: flex;
+        position: relative;
+        right: 25px;
+        justify-content: center;
+        width: 80%;
+        height: 200px;
+        font-size: 1.25rem;
+        margin-bottom: 400px;
+    }
+
+
+    
+    /*
+
+    Skills
+
+     */
+
+    .skills__wrapper {
+        margin: 100px 0 200px 0;
+        display: grid;
+        grid-template-columns: 155px 225px;
+        grid-template-rows: 155px 155px 155px;
+        justify-content: space-evenly;
+    }
+
+    .skills__row--remove {
+        display: none;
+    }
+    /*
+
+  NAV BAR
+
+  */
+    header {
+        display: none;
+    }
+
+    /*
+
+  Icons for nav bar
+
+  */
+    .social-links {
+        display: none;
+    }
+    .icon {
+        display: none;
+    }
+
+    /* 
+
+    FOOTER
+
+    */
+
+    .footer>.copyright {
+        margin-top: auto;
+    }
+    .footer>.copyright>p {
+        font-size: .65rem;
+    }
+}
+
+
+/*
+
+   SMALLER
+   Mobile Style
+
+   */
+
+@media only screen and (max-width: 370px) {
+
+    .hero::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgb(1, 23, 82);
+        top: 0;
+        left: 0;
+        opacity: .2;
+        z-index: 3;
+    }
+    .hero > .hero__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        padding-top: 50%;
+        padding-bottom: 15px;
+        position: relative;
+        z-index: 5;
+    }
+    .hero__title--sub-title {
+        font-size: 1.05em;
+        margin: 0;
+        position: relative;
+        z-index: 5;
+    }
+    .about>.about__title {
+        font-size: 1.5em;
+    }
+    .aboutme {
+        width: 100%;
+    }
+    .about>.about__title--paragraph {
+        display: flex;
+        position: relative;
+        right: 25px;
+        justify-content: center;
+        width: 60%;
+        height: 200px;
+        font-size: .95rem;
+    }
+    /*
+
+      SKILLS
+    
+      Have the height be rewritten for the logos that are too big
+
+      */
+
+      .skills__wrapper {
+        margin: 100px 0 200px 0;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+    }
+
+    .skills__row--remove {
+        display: none;
+    }
+
+    /* 
+    
+    Contact 
+    
+    */
+    .form__input--message {
+        width: 60vw;
+        padding-bottom: 200px;
+    }
+    
+    /*
+
+    NAV BAR
+
+    */
+    header {
+        display: none;
+    }
+    ul {
+        display: none;
+    }
+
+    /*
+
+    Icons for nav bar
+
+    */
+    .social-links {
+        display: none;
+    }
+    .icon {
+        display: none;
+    }
+
+}
+>>>>>>> parent of cf9106c... Base SASS
