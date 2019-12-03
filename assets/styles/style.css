@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* Linking */
 /* Mixins */
 /* Nav Bar */
 =======
+=======
+>>>>>>> parent of cf9106c... Base SASS
 html,
 body {
     margin: 0px;
@@ -16,6 +19,9 @@ body {
 
   */
 
+<<<<<<< HEAD
+>>>>>>> parent of cf9106c... Base SASS
+=======
 >>>>>>> parent of cf9106c... Base SASS
 header {
     position: fixed;
@@ -72,6 +78,7 @@ ul {
 
 /*
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 */
 .hero {
@@ -138,6 +145,9 @@ ul {
 =======
   HERO
 >>>>>>> parent of cf9106c... Base SASS
+=======
+  HERO
+>>>>>>> parent of cf9106c... Base SASS
 
   */
 
@@ -152,9 +162,12 @@ ul {
     text-align: center;
     display: block;
 <<<<<<< HEAD
+<<<<<<< HEAD
     color: white;
     font-family: "Montserrat", sans-serif;
 =======
+=======
+>>>>>>> parent of cf9106c... Base SASS
     color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
 >>>>>>> parent of cf9106c... Base SASS
@@ -192,6 +205,8 @@ ul {
 
 /* hero__cta */
 .hero__cta {
+<<<<<<< HEAD
+=======
     position: relative;
     z-index: 5;
     font-family: 'Montserrat', sans-serif;
@@ -207,6 +222,27 @@ ul {
 }
 
 .hero__cta:hover {
+>>>>>>> parent of cf9106c... Base SASS
+    position: relative;
+    z-index: 5;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(123, 178, 250);
+    border-radius: 10px;
+    color: white;
+    padding: 15px 120px;
+<<<<<<< HEAD
+    opacity: .85;
+=======
+    opacity: 1;
+>>>>>>> parent of cf9106c... Base SASS
+    margin: 20px 0 0 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+<<<<<<< HEAD
+.hero__cta:hover {
     position: relative;
     z-index: 5;
     font-family: 'Montserrat', sans-serif;
@@ -221,6 +257,8 @@ ul {
     display: inline-block;
 }
 
+=======
+>>>>>>> parent of cf9106c... Base SASS
 
 /*
 
@@ -234,15 +272,21 @@ ul {
 
 .about > .about__title {
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin: 150px 0 75px 0;
   text-align: center;
   font-size: 2em;
   font-family: "Montserrat", sans-serif;
 =======
+=======
+>>>>>>> parent of cf9106c... Base SASS
     margin: 150px 0 75px 0;
     text-align: center;
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
+<<<<<<< HEAD
+>>>>>>> parent of cf9106c... Base SASS
+=======
 >>>>>>> parent of cf9106c... Base SASS
 }
 
@@ -262,6 +306,7 @@ ul {
    */
 
 .skills__wrapper {
+<<<<<<< HEAD
 <<<<<<< HEAD
   margin: 100px 0 200px 0;
   grid-gap: 50px;
@@ -410,10 +455,31 @@ ul {
    */
 
 .work__title {
+=======
+    margin: 100px 0 200px 0;
+    grid-gap: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly;
+}
+
+
+/*
+
+   WORK
+
+   */
+
+.work__title {
+>>>>>>> parent of cf9106c... Base SASS
     text-align: center;
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 150px;
+<<<<<<< HEAD
+>>>>>>> parent of cf9106c... Base SASS
+=======
 >>>>>>> parent of cf9106c... Base SASS
 }
 
@@ -438,6 +504,7 @@ ul {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .contact {
   font-family: "Montserrat", sans-serif;
   display: -webkit-box;
@@ -459,10 +526,23 @@ ul {
    */
 
 .contact {
+=======
+
+/*
+
+   CONTACT
+
+   */
+
+.contact {
+>>>>>>> parent of cf9106c... Base SASS
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
+>>>>>>> parent of cf9106c... Base SASS
+=======
 >>>>>>> parent of cf9106c... Base SASS
 }
 
@@ -500,6 +580,7 @@ ul {
 }
 
 .form__input--message {
+<<<<<<< HEAD
 <<<<<<< HEAD
   width: 50vw;
   font-family: "Ubuntu", sans-serif;
@@ -571,6 +652,33 @@ ul {
    */
 
 >>>>>>> parent of cf9106c... Base SASS
+=======
+    width: 50vw;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 200px;
+}
+
+.form__input::placeholder {
+    padding-left: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25rem;
+}
+
+.form__input--submit {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25rem;
+    color: white;
+    background-color: #302D2D;
+    
+}
+
+/*
+
+   FOOTER
+
+   */
+
+>>>>>>> parent of cf9106c... Base SASS
 .footer {
     margin-top: 150px;
     padding: .25rem;
@@ -602,6 +710,7 @@ ul {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* Media Queries */
 @media only screen and (max-width: 700px) {
   .footer > .copyright {
@@ -623,6 +732,8 @@ body {
 }
 /*# sourceMappingURL=style.css.map */
 =======
+=======
+>>>>>>> parent of cf9106c... Base SASS
 
 /*
 
@@ -915,5 +1026,9 @@ body {
         display: none;
     }
 
+<<<<<<< HEAD
+}
+>>>>>>> parent of cf9106c... Base SASS
+=======
 }
 >>>>>>> parent of cf9106c... Base SASS
