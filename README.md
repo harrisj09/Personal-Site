@@ -1,5 +1,7 @@
 # [Personal-Site](https://jhhwebsite.netlify.com)
-Site is in beta.
+Site is in beta. 
+
+Now built with SASS
 
 ## [Under new hosting and Domain](https://jhhwebsite.netlify.com)
 This is because I plan on implementing a contact form and possibly other backend technologies if needed.
