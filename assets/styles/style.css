@@ -1,5 +1,6 @@
 /* Variables */
 /* Linking */
+/* Mixins */
 /* Nav Bar */
 header {
   position: fixed;
@@ -73,7 +74,7 @@ HERO
   text-align: center;
   display: block;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: relative;
   z-index: 3;
 }
@@ -95,33 +96,33 @@ HERO
 }
 
 .hero .hero__cta {
+  opacity: .85;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   position: relative;
   z-index: 5;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #7bb2fa;
   border-radius: 10px;
   color: white;
   padding: 15px 120px;
-  opacity: .85;
   margin: 20px 0 0 0;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
 }
 
 .hero .hero__cta:hover {
+  opacity: 1;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   position: relative;
   z-index: 5;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #7bb2fa;
   border-radius: 10px;
   color: white;
   padding: 15px 120px;
-  opacity: 1;
   margin: 20px 0 0 0;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
 }
 
 .hero::after {
@@ -179,7 +180,7 @@ HERO
     text-align: center;
     display: block;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     position: relative;
     z-index: 3;
   }
@@ -263,7 +264,7 @@ HERO
   margin: 150px 0 75px 0;
   text-align: center;
   font-size: 2em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .about > .about__title--paragraph {
@@ -403,7 +404,7 @@ HERO
 .work__title {
   text-align: center;
   font-size: 2em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 150px;
 }
 
@@ -432,9 +433,8 @@ HERO
   border-radius: 45px;
 }
 
-/* Media Queries */
 .contact {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,36 +486,36 @@ HERO
 
 .form__input--message {
   width: 50vw;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding-bottom: 200px;
 }
 
 .form__input::-webkit-input-placeholder {
   padding-left: 10px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.25rem;
 }
 
 .form__input:-ms-input-placeholder {
   padding-left: 10px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.25rem;
 }
 
 .form__input::-ms-input-placeholder {
   padding-left: 10px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.25rem;
 }
 
 .form__input::placeholder {
   padding-left: 10px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.25rem;
 }
 
 .form__input--submit {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.25rem;
   color: white;
   background-color: #302D2D;
@@ -573,6 +573,11 @@ HERO
   }
 }
 
+/* Mixins 
+For some odd reason I cant use mixins in other files
+Ill find a fix later but for now im just gonna leave these both in the classes so when I do find a fix
+I can just remove the ones in the other files
+*/
 /* Base Attributes */
 html,
 body {

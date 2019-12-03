@@ -1,5 +1,5 @@
 .contact {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $baseFont;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,18 +40,18 @@
 
 .form__input--message {
     width: 50vw;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $formFont;
     padding-bottom: 200px;
 }
 
 .form__input::placeholder {
     padding-left: 10px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $formFont;
     font-size: 1.25rem;
 }
 
 .form__input--submit {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $formFont;
     font-size: 1.25rem;
     color: white;
     background-color: #302D2D;
