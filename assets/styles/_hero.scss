@@ -80,12 +80,10 @@ HERO
         margin: 0;
     }
 .hero__cta {
-    opacity: .85;
     @include ctaPreFab(.85);
 }
 
 .hero__cta:hover {
-    opacity: 1;
     @include ctaPreFab(1);
     }
 }
