@@ -9,12 +9,12 @@ const JAVASCRIPT = 'JAVASCRIPT';
 const WORDPRESS = 'WORDPRESS';
 const REACT = 'REACT';
 
+//Apply this to the instance variables it doesn't apply to
+const NULL = null;
+
 //Base variables for filtering results
 let projectType;
 let projectLang;
-
-//Apply this to the instance variables it doesn't apply to
-const NULL = null;
 
 //Element make this blank and check if its null every time in the functions that handle this. If its null dont do anything otherwise change its colors
 let previousClickType = document.getElementById('both');
