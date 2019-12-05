@@ -70,7 +70,6 @@ function languageFilter(obj, string) {
 //Checks what the variables type and lang have and filters out if that object contains that word
 //I should probably make another array for the projects boxes (the outline)
 function projectFilter() {
-  const typeFilter
 
 }
 
