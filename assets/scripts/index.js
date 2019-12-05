@@ -68,5 +68,6 @@ function languageFilter(obj, string) {
 }
 
 function filterArray() {
+  //check if theyre not null.
     return projects.indexOf(projectType) !== -1 && projects.indexOf(projectLang) !== -1;
 }
