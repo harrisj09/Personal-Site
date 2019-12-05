@@ -3,7 +3,6 @@ const BOTH = 'BOTH';
 const PERSONAL = 'PERSONAL';
 const CLIENT = 'CLIENT';
 
-//Language
 const ALL = 'ALL';
 const HTML = 'HTML/CSS';
 const JAVASCRIPT = 'JAVASCRIPT';
@@ -17,8 +16,8 @@ let projectLang;
 //Apply this to the instance variables it doesn't apply to
 const NULL = null;
 
-//Element 
-let previousClick = document.getElementById('both');
+//Element make this blank and check if its null every time in the functions that handle this. If its null dont do anything otherwise change its colors
+let previousClickType = document.getElementById('both');
 let previousClickLang = document.getElementById('all');
 
 //Create objects of the projects the actual version on my site will contain another parameter for a link for anchor tags 
@@ -37,7 +36,6 @@ function project(name, desc, both, personal, client, all, html, wordpress, js, r
 
 //Store objects
 const projects = [
-    // name, desc, both,  personal, client, all, html, wordpress, js, react
   new project("Job Listing", "Static Page Containing Job Listings", BOTH, PERSONAL, NULL, ALL, HTML, NULL, NULL, NULL),
   new project("Calculator", "Basic JavaScript Calculator", BOTH, PERSONAL, NULL, ALL, HTML, NULL, JAVASCRIPT, NULL),
   new project("TODO", "Organize your everyday life with this web app made with React", BOTH, PERSONAL, NULL, ALL, HTML, NULL, JAVASCRIPT, REACT),
@@ -48,11 +46,11 @@ const projects = [
 
 //Handles what color changes calls filter function at the end to automatically update results
 function typeFilter(obj, string) {
-    previousClick.style.backgroundColor = "white";
-    previousClick.style.color = "#2185D0";
+    previousClickType.style.backgroundColor = "white";
+    previousClickType.style.color = "#2185D0";
     obj.style.backgroundColor = "#2185D0";
     obj.style.color = "white";
-    previousClick = obj;
+    previousClickType = obj;
     projectType = string;
     projects.filter(filterArray);
     console.log(projects);
@@ -65,23 +63,10 @@ function languageFilter(obj, string) {
     obj.style.color = "white";
     previousClickLang = obj;
     projectLang = string;
-    //projects.filter(filterArray);
     projects.filter(filterArray);
     console.log(projects);
 }
 
-//Checks what the variables type and lang have and filters out if that object contains that word
-//I should probably make another array for the projects boxes (the outline)
 function filterArray() {
     return projects.indexOf(projectType) !== -1 && projects.indexOf(projectLang) !== -1;
 }
-
-/*
-  const isValid = (projects[i].type == type && projects[i].lang == lang);
-  //For loop starts checks base variables.
-  for(i = 0; i < projects.length; ++i) {
-      if(isValid) {
-        //Logic goes here
-      }
-  }
-*/
