@@ -83,27 +83,129 @@
 <!-- WORK -->
 <div id="work">
     <h1 class="work__title">My Most Recent Work</h1>
-    <div class="work__wrapper">
-        <!-- SIDE PROJECT IMAGES -->
-        <div class="work__row">
-            <img src="assets/images/placeholder.png" class="side-project-image" id="project1">
+    <div class="main__group">
+        <!-- Hovering turns the background to blue -->
+        <div class="top__btn" id="both" onclick="typeFilter(this, 'Both')"> 
+        Both
         </div>
-        <div class="work__row">
-            <img src="assets/images/placeholder.png" class="side-project-image" id="project2">
+        
+        <div class="top__btn" id="personal" onclick="typeFilter(this, 'Personal')"> 
+        Personal
         </div>
-        <div class="work__row">
-            <img src="assets/images/placeholder.png" class="side-project-image" id="project3">
+        
+        
+        <div class="top__btn" id="client" onclick="typeFilter(this, 'Client')"> 
+        Client
         </div>
-        <div class="work__row">
-            <img src="assets/images/placeholder.png" class="side-project-image" id="project4">
+          
+          </div>
+          <div class="main__group"> 
+          <div class="top__btn second__btn" id="all" onclick="languageFilter(this, 'All')"> 
+        All
         </div>
-        <div class="work__row">
-            <img src="assets/images/placeholder.png" class="side-project-image" id="project5">
+        
+        <div class="top__btn second__btn" id="html/css" onclick="languageFilter(this, 'HTML/CSS')"> 
+        HTML/CSS
         </div>
-        <div class="work__row">
-            <img src="assets/images/placeholder.png" class="side-project-image" id="project6">
+            
+            <div class="top__btn second__btn" id="wordpress" onclick="languageFilter(this, 'WordPress')"> 
+        WordPress
         </div>
-    </div>
+        
+        
+        <div class="top__btn second__btn" id="javascript" onclick="languageFilter(this, 'JavaScript')"> 
+        JavaScript
+        </div>
+            
+        <div class="top__btn second__btn" id="react" onclick="languageFilter(this, 'React')"> 
+              React
+        </div>
+            
+            </div>
+        
+        <!--<a href="https://www.vecteezy.com/free-vector/list">List Vectors by Vecteezy</a> -->
+        <div class="wrapper">
+          <div class="row" data-project="1">
+          <img class="logo" src="https://static.vecteezy.com/system/resources/previews/000/350/423/non_2x/vector-checklist-icon.jpg" alt="image">
+          <div class="top">
+            <h3 class="title">Job Listing</h3>
+            <h6 class="language">HTML/CSS</h6>
+            <p class="desc">Static Page Containing Job Listings</p>
+            </div>
+            
+          <div class="bottom">
+            <div class="image"> </div>
+            <p class="type">Personal</p>
+            </div>
+            </div>
+          
+            <div class="row" data-project="2">
+          <img class="logo" src="https://static.vecteezy.com/system/resources/previews/000/350/423/non_2x/vector-checklist-icon.jpg" alt="image">
+          <div class="top">
+            <h3 class="title">Calculator</h3>
+            <h6 class="language">HTML/CSS, JavaScript</h6>
+            <p class="desc">Basic JavaScript Calculator</p>
+            </div>
+            
+          <div class="bottom">
+            <div class="image"> </div>
+            <p class="type">Personal</p>
+            </div>
+            </div>
+            <div class="row" data-project="3">
+          <img class="logo" src="https://static.vecteezy.com/system/resources/previews/000/350/423/non_2x/vector-checklist-icon.jpg" alt="image">
+          <div class="top">
+            <h3 class="title">TODO</h3>
+            <h6 class="language">HTML/CSS, JavaScript, React</h6>
+            <p class="desc">Organize your everyday life with this web app made with React</p>
+            </div>
+            
+          <div class="bottom">
+            <div class="image"> </div>
+            <p class="type">Personal</p>
+            </div>
+            </div>
+            <div class="row" data-project="4">
+          <img class="logo" src="https://static.vecteezy.com/system/resources/previews/000/350/423/non_2x/vector-checklist-icon.jpg" alt="image">
+          <div class="top">
+            <h3 class="title">Login and Signup</h3>
+            <h6 class="language">HTML/CSS</h6>
+            <p class="desc">Static Page for logging in and signing up</p>
+            </div>
+            
+          <div class="bottom">
+            <div class="image"> </div>
+            <p class="type">Personal</p>
+            </div>
+            </div>
+          
+              <div class="row" data-project="5">
+          <img class="logo" src="https://static.vecteezy.com/system/resources/previews/000/350/423/non_2x/vector-checklist-icon.jpg" alt="image">
+          <div class="top">
+            <h3 class="title">RNG Therapy Site</h3>
+            <h6 class="language">WordPress</h6>
+            <p class="desc">WordPress Site that allows people to schedule appointments.</p>
+            </div>
+            
+          <div class="bottom">
+            <div class="image"> </div>
+            <p class="type">Client</p>
+            </div>
+            </div>
+          
+              <div class="row" data-project="6">
+          <img class="logo" src="https://static.vecteezy.com/system/resources/previews/000/350/423/non_2x/vector-checklist-icon.jpg" alt="image">
+          <div class="top">
+            <h3 class="title">Coffee Shop Website</h3>
+            <h6 class="language">HTML/CSS, JavaScript, React</h6>
+            <p class="desc">Static Page for a Coffee Shop</p>
+            </div>
+            
+          <div class="bottom">
+            <div class="image"> </div>
+            <p class="type">Client</p>
+            </div>
+            </div>
 </div>
 <!-- CONTACT -->
 <div id="contact" class="contact">

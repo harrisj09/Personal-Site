@@ -1,63 +1,60 @@
-/* 
-Handles mobile menu and descriptions of project displays
+//default values
+let type = "Both";
+let lang = "All";
 
+//Element 
+let previousClick = document.getElementById('both');
+let previousClickLang = document.getElementById('all');
 
+//stores the objects
+let projectsArray = [];
 
-
-<div class="project" data-project="1"></div>
-<div class="project" data-project="2"></div>
-<div class="project" data-project="3"></div>
-<div class="project" data-project="4"></div>
-<div class="project" data-project="5"></div>
-<div class="project" data-project="6"></div>
-
-
-const projects = [...document.querySelectorAll('[data-project]')];
-
-projects.forEach(project => project.addEventListener('click', e => {
-  console.log(`you clicked project-${e.target.dataset.project}`);
-}));
-
-https://codepen.io/roufs_designs/pen/PowYMzz?editors=1111
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes 
-*/
-
-//Event listeners
-document.querySelector("#project1").addEventListener("click", project1Box);
-document.querySelector("#project2").addEventListener("click", project2Box);
-document.querySelector("#project3").addEventListener("click", project3Box);
-document.querySelector("#project4").addEventListener("click", project4Box);
-document.querySelector("#project5").addEventListener("click", project5Box);
-document.querySelector("#project6").addEventListener("click", project6Box);
-
-//Base variables
-let projectDesc = "";
-
-
-function project1Box() {
-    console.log("project1 pressed");
+//Create objects of the projects the actual version on my site will contain another parameter for a link for anchor tags 
+function project(name, lang, desc, type) {
+  this.name = name;
+  this.lang = lang;
+  this.desc = desc;
+  this.type = type;
 }
 
-function project2Box() {
-    console.log("project2 pressed");
+//Project Objects
+let project1 = new project("Job Listing", "HTML/CSS", "Static Page Containing Job Listings", "Personal");
+let project2 = new project("Calculator", "HTML/CSS, JavaScript", "Basic JavaScript Calculator", "Personal");
+let project3 = new project("TODO", "HTML/CSS, JavaScript, React", "Organize your everyday life with this web app made with React", "Personal");
+let project4 = new project("Login and Signup", "HTML/CSS", "Static Page for logging in and signing up", "Personal");
+let project5 = new project("RNG Therapy Site", "WordPress", "WordPress Site that allows people to schedule appointments.", "Client");
+let project6 = new project("Coffee Shop Website", "HTML/CSS, JavaScript, React", "Static Page for a Coffee Shop", "Client");
+
+projectsArray.push(project1);
+projectsArray.push(project2);
+projectsArray.push(project3);
+projectsArray.push(project4);
+projectsArray.push(project5);
+projectsArray.push(project6);
+
+//Handles what color changes calls filter function at the end to automatically update results
+function typeFilter(obj, string) {
+    previousClick.style.backgroundColor = "white";
+    previousClick.style.color = "#2185D0";
+    obj.style.backgroundColor = "#2185D0";
+    obj.style.color = "white";
+    previousClick = obj;
+    type = string;
+    console.log(type)
 }
 
-function project3Box() {
-    console.log("project3 pressed");
+function languageFilter(obj, string) {
+    previousClickLang.style.backgroundColor = "#E0E1E2";
+    previousClickLang.style.color = "#000000";
+    obj.style.backgroundColor = "#2185D0";
+    obj.style.color = "white";
+    previousClickLang = obj;
+    lang = string;
+    console.log(lang);
 }
 
-function project4Box() {
-    console.log("project4 pressed");
-}
-
-function project5Box() {
-    console.log("project5 pressed");
-}
-
-function project6Box() {
-    console.log("project6 pressed");
-}
-
-function setText() {
-    
+//Checks what the variables type and lang have and filters out if that object contains that word
+//I should probably make another array for the projects boxes (the outline)
+function projectFilter() {
+  
 }
