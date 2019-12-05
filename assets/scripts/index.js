@@ -22,7 +22,7 @@ let previousClick = document.getElementById('both');
 let previousClickLang = document.getElementById('all');
 
 //Create objects of the projects the actual version on my site will contain another parameter for a link for anchor tags 
-function project(name, desc, both, personal, client, all, html, js, wordpress, react) {
+function project(name, desc, both, personal, client, all, html, wordpress, js, react) {
   this.name = name;
   this.desc = desc;
   this.both = both;
@@ -30,20 +30,20 @@ function project(name, desc, both, personal, client, all, html, js, wordpress, r
   this.client = client;
   this.all = all;
   this.html = html;
-  this.js = js;
   this.wordpress = wordpress;
+  this.js = js;
   this.react = react;
 }
 
 //Store objects
 const projects = [
-    // name, desc, both,  personal, client, all, html, js, wordpress, react
-  new project("Job Listing", "Static Page Containing Job Listings", BOTH, PERSONAL, NULL, ALL, HTML, ),
-  new project("Calculator", "HTML/CSS, JavaScript", "Basic JavaScript Calculator", "Personal"),
-  new project("TODO", "HTML/CSS, JavaScript, React", "Organize your everyday life with this web app made with React", "Personal"),
-  new project("Login and Signup", "HTML/CSS", "Static Page for logging in and signing up", "Personal"),
-  new project("RNG Therapy Site", "WordPress", "WordPress Site that allows people to schedule appointments.", "Client"),
-  new project("Coffee Shop Website", "HTML/CSS, JavaScript, React", "Static Page for a Coffee Shop", "Client"),
+    // name, desc, both,  personal, client, all, html, wordpress, js, react
+  new project("Job Listing", "Static Page Containing Job Listings", BOTH, PERSONAL, NULL, ALL, HTML, NULL, NULL, NULL),
+  new project("Calculator", "Basic JavaScript Calculator", BOTH, PERSONAL, NULL, ALL, HTML, NULL, JAVASCRIPT, NULL),
+  new project("TODO", "Organize your everyday life with this web app made with React", BOTH, PERSONAL, NULL, ALL, HTML, NULL, JAVASCRIPT, REACT),
+  new project("Login and Signup", "Static Page for logging in and signing up", BOTH, PERSONAL, NULL, ALL, HTML, NULL, NULL, NULL),
+  new project("RNG Therapy Site", "WordPress Site that allows people to schedule appointments.", BOTH, NULL, CLIENT, ALL, NULL, WORDPRESS, NULL, NULL),
+  new project("Coffee Shop Website","Static Page for a Coffee Shop", BOTH, NULL, CLIENT, ALL, HTML, NULL, JAVASCRIPT, REACT),
 ];
 
 //Handles what color changes calls filter function at the end to automatically update results
@@ -53,8 +53,9 @@ function typeFilter(obj, string) {
     obj.style.backgroundColor = "#2185D0";
     obj.style.color = "white";
     previousClick = obj;
-    type = string;
-    console.log(type)
+    projectType = string;
+    projects.filter(filterArray);
+    console.log(projects);
 }
 
 function languageFilter(obj, string) {
@@ -63,14 +64,16 @@ function languageFilter(obj, string) {
     obj.style.backgroundColor = "#2185D0";
     obj.style.color = "white";
     previousClickLang = obj;
-    lang = string;
-    console.log(lang);
+    projectLang = string;
+    //projects.filter(filterArray);
+    projects.filter(filterArray);
+    console.log(projects);
 }
 
 //Checks what the variables type and lang have and filters out if that object contains that word
 //I should probably make another array for the projects boxes (the outline)
-function projectFilter() {
-
+function filterArray() {
+    return projects.indexOf(projectType) !== -1 && projects.indexOf(projectLang) !== -1;
 }
 
 /*
