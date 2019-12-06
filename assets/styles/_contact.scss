@@ -69,6 +69,7 @@
     width: 50vw;
     font-family: $formFont;
     padding-bottom: 200px;
+    resize: none;
 }
 
 .form__input::placeholder {

@@ -423,7 +423,7 @@ HERO
 }
 
 .work__title {
-  margin-top: 100px;
+  margin-top: 150px;
   text-align: center;
   font-size: 2em;
   font-family: "Montserrat", sans-serif;
@@ -623,6 +623,7 @@ HERO
   width: 50vw;
   font-family: "Ubuntu", sans-serif;
   padding-bottom: 200px;
+  resize: none;
 }
 
 .form__input::-webkit-input-placeholder {
