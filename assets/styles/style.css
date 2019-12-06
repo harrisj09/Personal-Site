@@ -272,7 +272,7 @@ HERO
   background-color: #7bb2fa;
   border-radius: 10px;
   color: white;
-  padding: 15px 120px;
+  padding: 12px 120px;
   margin: 20px 0 0 0;
   opacity: 0.85;
 }
@@ -287,7 +287,7 @@ HERO
   background-color: #7bb2fa;
   border-radius: 10px;
   color: white;
-  padding: 15px 120px;
+  padding: 12px 120px;
   margin: 20px 0 0 0;
   opacity: 1;
 }
@@ -423,6 +423,7 @@ HERO
 }
 
 .work__title {
+  margin-top: 100px;
   text-align: center;
   font-size: 2em;
   font-family: "Montserrat", sans-serif;
