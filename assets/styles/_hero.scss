@@ -46,7 +46,7 @@ ul {
     text-decoration: none;
     color: white;
     font-size: 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
     transition: all .5s ease-in-out;
 }
 
@@ -86,7 +86,6 @@ HERO
     font-family: $baseFont;
     position: relative;
     z-index: 3;
-
 
     .hero__title{
         font-size: $primaryTitleFont;
