@@ -27,7 +27,6 @@ function project(name, desc, both, type, all, language) {
   this.language = language;
 }
 
-//Store objects
 const projects = [
     new project("Job Listing", "Static Page Containing Job Listings", BOTH, PERSONAL, ALL, HTML),
     new project("Calculator", "Basic JavaScript Calculator", BOTH, PERSONAL, ALL, HTML + ", " + JAVASCRIPT),
@@ -63,6 +62,7 @@ function fullFilter() {
     let m = 0;
     if(ifDefaultChoices) {
         //Just call function to print the projects Array otherwise run the loop
+        //A function might be needed to handle if one of the default values but the other one isn't (type is BOTH lang is JavaScript)
     }
     else {
         for (let i = 0; i < projects.length; i++) {
