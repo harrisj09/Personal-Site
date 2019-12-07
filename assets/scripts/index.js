@@ -66,6 +66,34 @@ function finalFilter() {
     You're getting an error because the objects aren't defined
     Maybe a for each loop in my function to go through each index
     https://stackoverflow.com/questions/41511587/javascript-error-cannot-read-property-includes-of-undefined
+
+    THIS WORKS
+
+    const testVal = "HTML";
+const testVal2 = "WEBSITE";
+
+const h = "HTML"
+const j = "JAVASCRIPT"
+const w = "WEBSITE"
+
+
+function obje(type, lang) {
+  this.type = type;
+  this.lang = lang;
+}
+
+const test = [
+  new obje(h + ", " + j, w),
+  new obje(j, "IM JOHN"),
+];
+
+filter();
+
+function filter() {
+  for(let i = 0; i < test.length; i++){
+    console.log(test[i].type.includes(testVal) && test[i].lang.includes(testVal2));
+  }
+}
      */
     return projects.type.includes(projectType) && projects.language.includes(projectLang);
 }
