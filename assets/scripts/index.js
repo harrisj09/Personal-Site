@@ -59,8 +59,13 @@ function languageFilter(obj, string) {
     projects.filter(finalFilter);
 }
 
-//if projects.includes(projectType) push array into new array
 function finalFilter() {
     //Have logic here for when the selection is all or both
+
+    /*
+    You're getting an error because the objects aren't defined
+    Maybe a for each loop in my function to go through each index
+    https://stackoverflow.com/questions/41511587/javascript-error-cannot-read-property-includes-of-undefined
+     */
     return projects.type.includes(projectType) && projects.language.includes(projectLang);
 }
