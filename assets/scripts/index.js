@@ -9,16 +9,15 @@ const JAVASCRIPT = 'JAVASCRIPT';
 const WORDPRESS = 'WORDPRESS';
 const REACT = 'REACT';
 
-//Base variables for filtering results
 let projectType = BOTH;
 let projectLang = ALL;
-let filteredArray = [];
+const ifDefaultChoices = projectType === BOTH && projectLang === ALL;
 
 //Element make this blank and check if its null every time in the functions that handle this. If its null dont do anything otherwise change its colors
 let previousClickType = document.getElementById('both');
 let previousClickLang = document.getElementById('all');
 
-//Create objects of the projects the actual version on my site will contain another parameter for a link for anchor tags 
+
 function project(name, desc, both, type, all, language) {
   this.name = name;
   this.desc = desc;
@@ -46,7 +45,7 @@ function typeFilter(obj, string) {
     obj.style.color = "white";
     previousClickType = obj;
     projectType = string;
-    projects.filter(finalFilter);
+    fullFilter();
 }
 
 function languageFilter(obj, string) {
@@ -56,25 +55,35 @@ function languageFilter(obj, string) {
     obj.style.color = "white";
     previousClickLang = obj;
     projectLang = string;
-    projects.filter(finalFilter);
+    fullFilter();
 }
 
-function finalFilter() {
-    //Have logic here for when the selection is all or both
+function fullFilter() {
+    let filteredArray = [];
+    let m = 0;
+    if(ifDefaultChoices) {
+        //Just call function to print the projects Array otherwise run the loop
+    }
+    else {
+        for (let i = 0; i < projects.length; i++) {
+            if (projects[i].type.includes(projectType) && projects[i].lang.includes(projectLang)) {
+                filteredArray[m] = new project(projects[i].type, projects[i].lang);
+                console.log( m + " " + filteredArray[m].type + " and " + filteredArray[m].lang);
+                m++;
+            }
+        }
+    }
+}
 
-    /*
-    You're getting an error because the objects aren't defined
-    Maybe a for each loop in my function to go through each index
-    https://stackoverflow.com/questions/41511587/javascript-error-cannot-read-property-includes-of-undefined
-
+/*
     THIS WORKS
 
-    const testVal = "HTML";
+const testVal = "HTML";
 const testVal2 = "WEBSITE";
 
-const h = "HTML"
-const j = "JAVASCRIPT"
-const w = "WEBSITE"
+const h = "HTML";
+const j = "JAVASCRIPT";
+const w = "WEBSITE";
 
 
 function obje(type, lang) {
@@ -87,13 +96,18 @@ const test = [
   new obje(j, "IM JOHN"),
 ];
 
+let blankArray = [];
+let m = 0;
+
 filter();
 
 function filter() {
   for(let i = 0; i < test.length; i++){
-    console.log(test[i].type.includes(testVal) && test[i].lang.includes(testVal2));
+    if(test[i].type.includes(testVal) && test[i].lang.includes(testVal2)) {
+      blankArray[m] = new obje(test[i].type, test[i].lang);
+      m++;
+    }
   }
+  console.log(blankArray[0].type + " is a " + blankArray[0].lang);
 }
-     */
-    return projects.type.includes(projectType) && projects.language.includes(projectLang);
-}
+ */
