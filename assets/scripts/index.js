@@ -38,6 +38,7 @@ const projects = [
 
 //Handles what color changes calls filter function at the end to automatically update results
 function typeFilter(obj, string) {
+  //Add DOM for hovering
     previousClickType.style.backgroundColor = "white";
     previousClickType.style.color = "#2185D0";
     obj.style.backgroundColor = "#2185D0";
@@ -48,6 +49,7 @@ function typeFilter(obj, string) {
 }
 
 function languageFilter(obj, string) {
+  //Add DOM for hovering
     previousClickLang.style.backgroundColor = "#E0E1E2";
     previousClickLang.style.color = "#000000";
     obj.style.backgroundColor = "#2185D0";
