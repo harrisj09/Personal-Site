@@ -11,7 +11,7 @@ const REACT = 'REACT';
 
 let projectType = BOTH;
 let projectLang = ALL;
-const ifDefaultChoices = projectType === BOTH && projectLang === ALL;
+const ifDefaultChoices = (projectType == BOTH && projectLang == ALL);
 
 //Element make this blank and check if its null every time in the functions that handle this. If its null dont do anything otherwise change its colors
 let previousClickType = document.getElementById('both');
@@ -60,18 +60,28 @@ function languageFilter(obj, string) {
 function fullFilter() {
     let filteredArray = [];
     let m = 0;
-    if(ifDefaultChoices) {
+/*
+  if(ifDefaultChoices) {
+        console.log("default values");
         //Just call function to print the projects Array otherwise run the loop
         //A function might be needed to handle if one of the default values but the other one isn't (type is BOTH lang is JavaScript)
     }
-    else {
-        for (let i = 0; i < projects.length; i++) {
-            if (projects[i].type.includes(projectType) && projects[i].lang.includes(projectLang)) {
-                filteredArray[m] = new project(projects[i].type, projects[i].lang);
-                console.log( m + " " + filteredArray[m].type + " and " + filteredArray[m].lang);
-                m++;
-            }
+   else {
+    }
+*/
+    for (let i = 0; i < projects.length; i++) {
+        if (projects[i].type.includes(projectType) && projects[i].language.includes(projectLang)) {
+            filteredArray[m] = new project(projects[i].name, projects[i].desc, projects[i].type, projects[i].language);
+
+            m++;
         }
+    }
+    printArray(filteredArray);
+}
+
+function printArray(filteredArray) {
+    for(let i = 0; i < filteredArray.length; i++) {
+        console.log(filteredArray.name + " " + filteredArray.desc + " " + filteredArray.type + " " + filteredArray.language);
     }
 }
 
@@ -85,6 +95,11 @@ const h = "HTML";
 const j = "JAVASCRIPT";
 const w = "WEBSITE";
 
+//Add this in
+const PERSONAL = "PERSONAL";
+const CLIENT = "CLIENT";
+const HTML = "HTML/CSS";
+const JAVASCRIPT = "JAVASCRIPT";
 
 function obje(type, lang) {
   this.type = type;
@@ -93,21 +108,28 @@ function obje(type, lang) {
 
 const test = [
   new obje(h + ", " + j, w),
+  new obje(h + ", " + j, w),
   new obje(j, "IM JOHN"),
 ];
-
-let blankArray = [];
-let m = 0;
 
 filter();
 
 function filter() {
+  let blankArray = [];
+  let m = 0;
+
   for(let i = 0; i < test.length; i++){
     if(test[i].type.includes(testVal) && test[i].lang.includes(testVal2)) {
       blankArray[m] = new obje(test[i].type, test[i].lang);
       m++;
     }
   }
-  console.log(blankArray[0].type + " is a " + blankArray[0].lang);
+  filterArray(blankArray);
+}
+
+function filterArray(blankArray) {
+  for(let j = 0; j < blankArray.length; j++) {
+  console.log(blankArray[j].type + " is a " + blankArray[j].lang);
+  }
 }
  */
