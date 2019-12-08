@@ -1,9 +1,6 @@
 # [Personal-Site](https://personalsiteharris.netlify.com/)
 Site is in beta.
 
-## [Under new hosting and Domain](https://personalsiteharris.netlify.com/)
-This is because I plan on implementing a contact form and possibly other backend technologies if needed.
-
 
  # For those who plan on using this web template.
 Credit is appreciated, but not required. If you find an issue with the site create a pull request or post an issue. Explanations of code will be worked on eventually.
