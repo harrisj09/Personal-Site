@@ -1,7 +1,7 @@
-# [Personal-Site](https://jhhwebsite.netlify.com)
+# [Personal-Site](https://personalsiteharris.netlify.com/)
 Site is in beta.
 
-## [Under new hosting and Domain](https://jhhwebsite.netlify.com)
+## [Under new hosting and Domain](https://personalsiteharris.netlify.com/)
 This is because I plan on implementing a contact form and possibly other backend technologies if needed.
 
 
