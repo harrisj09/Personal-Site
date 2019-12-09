@@ -9,22 +9,36 @@ const JAVASCRIPT = 'JAVASCRIPT';
 const WORDPRESS = 'WORDPRESS';
 const REACT = 'REACT';
 
+// Make an object that stores the options
+// state.projectType = HTML;
+/*
+    const state = {
+        projectType: BOTH,
+        projectLang: ALL,
+    }
+*/
 let projectType = BOTH;
 let projectLang = ALL;
-const ifDefaultChoices = (projectType == BOTH && projectLang == ALL);
+// end
 
-//Element make this blank and check if its null every time in the functions that handle this. If its null dont do anything otherwise change its colors
+// Get rid of the onClick in the html and do it all in here.
+// Give them a shared class so you can select all of them at once
+// const btnOptions = document.querySelectorAll('.sharedBtns');   (Terrible naming! ;P)
+/*
+    now you can simply loop over them and add an eventListener:
+    btnOptions.forEach(button => button.addEventListener('click', callback)
+*/
 let previousClickType = document.getElementById('both');
 let previousClickLang = document.getElementById('all');
 
 
 function project(name, desc, both, type, all, language) {
-  this.name = name;
-  this.desc = desc;
-  this.both = both;
-  this.type = type;
-  this.all = all;
-  this.language = language;
+    this.name = name;
+    this.desc = desc;
+    this.both = both;
+    this.type = type;
+    this.all = all;
+    this.language = language;
 }
 
 const projects = [
@@ -36,9 +50,9 @@ const projects = [
     new project("Coffee Shop Website","Static Page for a Coffee Shop", BOTH, CLIENT, ALL, HTML + ", " + JAVASCRIPT + ", " + REACT),
 ];
 
-//Handles what color changes calls filter function at the end to automatically update results
+// Make css classes, and add/remove classes based on the STATE. Instead of directly changing it's property values
 function typeFilter(obj, string) {
-  //Add DOM for hovering
+    //Add DOM for hovering
     previousClickType.style.backgroundColor = "white";
     previousClickType.style.color = "#2185D0";
     obj.style.backgroundColor = "#2185D0";
@@ -48,8 +62,9 @@ function typeFilter(obj, string) {
     fullFilter();
 }
 
+// Now you can simply do state.projectType = HTML;
 function languageFilter(obj, string) {
-  //Add DOM for hovering
+    //Add DOM for hovering
     previousClickLang.style.backgroundColor = "#E0E1E2";
     previousClickLang.style.color = "#000000";
     obj.style.backgroundColor = "#2185D0";
@@ -59,79 +74,33 @@ function languageFilter(obj, string) {
     fullFilter();
 }
 
+// FilteredArray should be const.
 function fullFilter() {
-    let filteredArray = [];
+    const filteredArray = [];
     let m = 0;
-/*
-  if(ifDefaultChoices) {
-        console.log("default values");
-        //Just call function to print the projects Array otherwise run the loop
-        //A function might be needed to handle if one of the default values but the other one isn't (type is BOTH lang is JavaScript)
-    }
-   else {
-    }
-*/
+    /*
+      if(ifDefaultChoices) {
+            console.log("default values");
+            //Just call function to print the projects Array otherwise run the loop
+            //A function might be needed to handle if one of the default values but the other one isn't (type is BOTH lang is JavaScript)
+        }
+       else {
+        }
+    */
+
+// Use .push(), the M variable isnt neccesary
     for (let i = 0; i < projects.length; i++) {
         if (projects[i].type.includes(projectType) && projects[i].language.includes(projectLang)) {
-            filteredArray[m] = new project(projects[i].name, projects[i].desc, projects[i].type, projects[i].language);
+            filteredArray.push(project(projects[i].name, projects[i].desc, projects[i].type, projects[i].language));
 
             m++;
         }
     }
     printArray(filteredArray);
 }
-
+// Same thing here
 function printArray(filteredArray) {
     for(let i = 0; i < filteredArray.length; i++) {
         console.log(filteredArray.name + " " + filteredArray.desc + " " + filteredArray.type + " " + filteredArray.language);
     }
 }
-
-/*
-    THIS WORKS
-
-const testVal = "HTML";
-const testVal2 = "WEBSITE";
-
-const h = "HTML";
-const j = "JAVASCRIPT";
-const w = "WEBSITE";
-
-//Add this in
-const PERSONAL = "PERSONAL";
-const CLIENT = "CLIENT";
-const HTML = "HTML/CSS";
-const JAVASCRIPT = "JAVASCRIPT";
-
-function obje(type, lang) {
-  this.type = type;
-  this.lang = lang;
-}
-
-const test = [
-  new obje(h + ", " + j, w),
-  new obje(h + ", " + j, w),
-  new obje(j, "IM JOHN"),
-];
-
-filter();
-
-function filter() {
-  let blankArray = [];
-  let m = 0;
-
-  for(let i = 0; i < test.length; i++){
-    if(test[i].type.includes(testVal) && test[i].lang.includes(testVal2)) {
-      blankArray[m] = new obje(test[i].type, test[i].lang);
-      m++;
-    }
-  }
-  filterArray(blankArray);
-}
-
-function filterArray(blankArray) {
-  for(let j = 0; j < blankArray.length; j++) {
-  console.log(blankArray[j].type + " is a " + blankArray[j].lang);
-  }
-}
- */
