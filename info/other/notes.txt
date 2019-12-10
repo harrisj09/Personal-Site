@@ -109,9 +109,15 @@ EXAMPLES
 </div>
 
 +++++++++++++++++++
-OLD BIO 
 
-Hello, my name is John Harris. I'm currently in college majoring in computer science.
-        I've been learning web development since highschool and everyday I continue to learn more. Since I've started college I've been surrounded by a very knowledgeable and intelligent crowd of people. <br> <br>
-        I began learning web development so I could create an online presence. Since then I've moved into JavaScript, PHP, MySQL and much more. I also
-        provide freelance work, on this site you will see projects from clients with small local businesses to individuals all around the world.
+    <script>
+       // run this function when the document is loaded
+       window.onload = function() {
+
+         // create a couple of elements in an otherwise empty HTML page
+         const heading = document.createElement("h1");
+         const heading_text = document.createTextNode("Big Head!");
+         heading.appendChild(heading_text);
+         document.body.appendChild(heading);
+      }
+    </script>

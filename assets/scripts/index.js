@@ -1,4 +1,10 @@
-//Type
+/*
+Eventually apply these changes to this script
+https://pastebin.com/tHhu5NES
+ */
+
+
+//Types
 const BOTH = 'BOTH';
 const PERSONAL = 'PERSONAL';
 const CLIENT = 'CLIENT';
@@ -9,30 +15,13 @@ const JAVASCRIPT = 'JAVASCRIPT';
 const WORDPRESS = 'WORDPRESS';
 const REACT = 'REACT';
 
-// Make an object that stores the options
-// state.projectType = HTML;
-/*
-    const state = {
-        projectType: BOTH,
-        projectLang: ALL,
-    }
-*/
 let projectType = BOTH;
 let projectLang = ALL;
 
-// Get rid of the onClick in the html and do it all in here.
-// Give them a shared class so you can select all of them at once
-// const btnOptions = document.querySelectorAll('.sharedType');
-
-
-/*
-    now you can simply loop over them and add an eventListener:
-    btnOptions.forEach(button => button.addEventListener('click', callback)
-*/
 let previousClickType = document.getElementById('both');
 let previousClickLang = document.getElementById('all');
 
-
+//Add an instance variable for replacing image with
 function project(name, desc, type, language) {
     this.name = name;
     this.desc = desc;
@@ -49,7 +38,6 @@ const projects = [
     new project("Coffee Shop Website","Static Page for a Coffee Shop", CLIENT, HTML + ", " + JAVASCRIPT + ", " + REACT),
 ];
 
-// Make css classes, and add/remove classes based on the STATE. Instead of directly changing it's property values
 function typeFilter(obj, string) {
     //Add DOM for hovering
     previousClickType.style.backgroundColor = "white";
@@ -62,7 +50,6 @@ function typeFilter(obj, string) {
     fullHandler();
 }
 
-// Now you can simply do state.projectType = HTML;
 function languageFilter(obj, string) {
     //Add DOM for hovering
     previousClickLang.style.backgroundColor = "#E0E1E2";
@@ -75,22 +62,35 @@ function languageFilter(obj, string) {
     fullHandler();
 }
 
-// FilteredArray should be const.
 function fullHandler() {
     const filteredArray = [];
       if(projectType === BOTH && projectLang === ALL) {
           domReplaceProjects(projects);
+          console.log("default values");
         }
+
       //type is default, lang is not
       else if(projectType === BOTH && projectLang !== ALL) {
-          //Logic here
-          console.log("Type is default, but lang is not");
+          for (let i = 0; i < projects.length; i++) {
+              if (projects[i].language.includes(projectLang)) {
+                  filteredArray[i] = Object.assign({}, projects[i]);
+              }
+          }
+          domReplaceProjects(filteredArray);
+          filteredArray.forEach(printArray);
       }
+
       //Type isnt default, lang is
       else if(projectType !== BOTH && projectLang === ALL) {
-          //Logic here
-          console.log("Type is not default, but lang is");
+          for (let i = 0; i < projects.length; i++) {
+              if (projects[i].type.includes(projectType)) {
+                  filteredArray[i] = Object.assign({}, projects[i]);
+              }
+          }
+          domReplaceProjects(filteredArray);
+          filteredArray.forEach(printArray);
       }
+
       //Normal Filter
        else {
           for (let i = 0; i < projects.length; i++) {
@@ -99,6 +99,7 @@ function fullHandler() {
                   filteredArray[i] = Object.assign({}, projects[i]);
               }
           }
+          domReplaceProjects(filteredArray);
           filteredArray.forEach(printArray);
       }
 }
@@ -106,5 +107,3 @@ function fullHandler() {
 function printArray(filteredArray) {
     console.log(filteredArray);
 }
-
-//Have the function in projectDOM to handle printing out the projects onto the screen
