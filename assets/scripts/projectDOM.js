@@ -1,9 +1,3 @@
-
-
-function domRegularArray(projects) {
-
-}
-
-function domFilteredArray(filteredArray) {
+function domReplaceProjects(projects) {
 
 }

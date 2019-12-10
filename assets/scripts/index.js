@@ -80,28 +80,40 @@ function fullFilter() {
     const filteredArray = [];
       if(projectType === BOTH && projectLang === ALL) {
             console.log("default values");
-            domRegularArray(projects);
+          domReplaceProjects(projects);
             //Just call function to print the projects Array otherwise run the loop
             //A function might be needed to handle if one of the default values but the other one isn't (type is BOTH lang is JavaScript)
         }
+      //type is default, lang is not
+      else if(projectType === BOTH && projectLang !== ALL) {
+          //Logic here
+          console.log("Type is default, but lang is not");
+      }
+      //Type isnt default, lang is
+      else if(projectType !== BOTH && projectLang === ALL) {
+          //Logic here
+          console.log("Type is not default, but lang is");
+      }
+      //Normal Filter
        else {
           for (let i = 0; i < projects.length; i++) {
               //Only print personal and HTML/CSS for some reason
+              console.log(projects[i].type.includes(projectType) && projects[i].language.includes(projectLang));
               if (projects[i].type.includes(projectType) && projects[i].language.includes(projectLang)) {
-                  //filteredArray.push(project(projects[i].name, projects[i].desc, projects[i].type, projects[i].language));
+
                   filteredArray[i] = Object.assign({}, projects[i]);
               }
           }
+          filteredArray.forEach(printArray);
       }
-    printArray(filteredArray);
 }
 
 function printArray(filteredArray) {
-    console.log(filteredArray[0].name);
-    for(let i = 0; i < filteredArray.length; i++) {
+    console.log(filteredArray);
+    /*for(let i = 0; i < filteredArray.length; i++) {
         console.log(filteredArray[i]);
     }
-
+    */
 }
 
 //Have the function in projectDOM to handle printing out the projects onto the screen
