@@ -122,14 +122,10 @@
         text-align: center;
     }
     .about__title--paragraph {
-        display: flex;
-        position: relative;
-        right: 25px;
-        justify-content: center;
         width: 80%;
-        height: 200px;
-        font-size: 1.25rem;
-        margin-bottom: 400px;
+        height: 1000px;
+        font-size: $primaryParagraphFont;
+        margin-bottom: 200px;
         font-family: $baseFont;
     }
 
@@ -154,9 +150,9 @@
         position: relative;
         justify-content: center;
         right: 25px;
-        width: 60%;
-        height: 200px;
-        font-size: .95rem;
+        width: 80%;
+        height: 300px;
+        font-size: .75rem;
         font-family: $baseFont;
     }
     /*

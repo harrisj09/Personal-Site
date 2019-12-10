@@ -7,21 +7,31 @@ Store all data attributes into an array.
 - This also means you're gonna have to have a default array.
  */
 
-const projectAttributes = ([document.querySelectorAll('[data-project]']);
+const projectAttributes = [
+    document.querySelector('[data-project="1"]'),
+    document.querySelector('[data-project="2"]'),
+    document.querySelector('[data-project="3"]'),
+    document.querySelector('[data-project="4"]'),
+    document.querySelector('[data-project="5"]'),
+    document.querySelector('[data-project="6"]'),
+];
 
 function domReplaceProjects(projects) {
+    console.log(projectAttributes.length);
     //Use projects array size for loop conditional
-    if(projects.length <= 5) {
+    if(projects.length <= 6) {
         for(let i = 0; i <= projects.length; i++) {
-
         }
     }
-    //Use data attributes size to replace that.
+    //Use data attributes array size for loop conditional
     else {
-
+        for(let i = 0; i < projectAttributes.length; i++) {
+            console.log(i);
+        }
     }
 }
 
+//Handles DOM
 /*
 const createProjectDescription = (project) => {
     return `
@@ -32,6 +42,7 @@ const createProjectDescription = (project) => {
   </div>
   `
 };
+
 
 const createProjectBottom = (project) => {
     return `
