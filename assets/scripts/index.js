@@ -79,10 +79,7 @@ function languageFilter(obj, string) {
 function fullHandler() {
     const filteredArray = [];
       if(projectType === BOTH && projectLang === ALL) {
-          console.log("default values");
           domReplaceProjects(projects);
-            //Just call function to print the projects Array otherwise run the loop
-            //A function might be needed to handle if one of the default values but the other one isn't (type is BOTH lang is JavaScript)
         }
       //type is default, lang is not
       else if(projectType === BOTH && projectLang !== ALL) {
