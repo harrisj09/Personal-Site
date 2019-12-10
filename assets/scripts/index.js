@@ -93,7 +93,6 @@ function fullFilter() {
               }
           }
       }
-
     printArray(filteredArray);
 }
 
