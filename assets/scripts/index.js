@@ -79,7 +79,7 @@ function languageFilter(obj, string) {
 function fullHandler() {
     const filteredArray = [];
       if(projectType === BOTH && projectLang === ALL) {
-            console.log("default values");
+          console.log("default values");
           domReplaceProjects(projects);
             //Just call function to print the projects Array otherwise run the loop
             //A function might be needed to handle if one of the default values but the other one isn't (type is BOTH lang is JavaScript)
@@ -96,33 +96,18 @@ function fullHandler() {
       }
       //Normal Filter
        else {
-           projects.forEach(fullFilter);
-           //Use for each since wordpress wont work since its only one.
           for (let i = 0; i < projects.length; i++) {
               console.log(projects[i].type.includes(projectType) && projects[i].language.includes(projectLang));
               if (projects[i].type.includes(projectType) && projects[i].language.includes(projectLang)) {
-
                   filteredArray[i] = Object.assign({}, projects[i]);
               }
           }
-          let index = 0;
-          filteredArray.forEach(printArray,index);
+          filteredArray.forEach(printArray);
       }
-}
-
-function fullFilter(filteredArray, i) {
-    if (projects[i].type.includes(projectType) && projects[i].language.includes(projectLang)) {
-        filteredArray[i] = Object.assign({}, projects[i]);
-    }
-    i++;
 }
 
 function printArray(filteredArray) {
     console.log(filteredArray);
-    /*for(let i = 0; i < filteredArray.length; i++) {
-        console.log(filteredArray[i]);
-    }
-    */
 }
 
 //Have the function in projectDOM to handle printing out the projects onto the screen
