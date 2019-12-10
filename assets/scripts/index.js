@@ -59,7 +59,7 @@ function typeFilter(obj, string) {
     previousClickType = obj;
     projectType = string;
     console.log(projectType);
-    fullFilter();
+    fullHandler();
 }
 
 // Now you can simply do state.projectType = HTML;
@@ -72,11 +72,11 @@ function languageFilter(obj, string) {
     previousClickLang = obj;
     projectLang = string;
     console.log(projectLang);
-    fullFilter();
+    fullHandler();
 }
 
 // FilteredArray should be const.
-function fullFilter() {
+function fullHandler() {
     const filteredArray = [];
       if(projectType === BOTH && projectLang === ALL) {
             console.log("default values");
@@ -96,6 +96,8 @@ function fullFilter() {
       }
       //Normal Filter
        else {
+           projects.forEach(fullFilter);
+           //Use for each since wordpress wont work since its only one.
           for (let i = 0; i < projects.length; i++) {
               console.log(projects[i].type.includes(projectType) && projects[i].language.includes(projectLang));
               if (projects[i].type.includes(projectType) && projects[i].language.includes(projectLang)) {
@@ -103,8 +105,16 @@ function fullFilter() {
                   filteredArray[i] = Object.assign({}, projects[i]);
               }
           }
-          filteredArray.forEach(printArray);
+          let index = 0;
+          filteredArray.forEach(printArray,index);
       }
+}
+
+function fullFilter(filteredArray, i) {
+    if (projects[i].type.includes(projectType) && projects[i].language.includes(projectLang)) {
+        filteredArray[i] = Object.assign({}, projects[i]);
+    }
+    i++;
 }
 
 function printArray(filteredArray) {

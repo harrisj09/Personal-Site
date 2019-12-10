@@ -52,8 +52,8 @@
   z-index: 3;
 }
 
-.skills_image {
-  margin-top: 20px;
+.skills__image {
+  margin-top: 40px;
   position: relative;
   z-index: 5;
 }
