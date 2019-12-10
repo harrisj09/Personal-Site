@@ -7,9 +7,60 @@ Store all data attributes into an array.
 - This also means you're gonna have to have a default array.
  */
 
-const projectData = [];
+const projectAttributes = ([document.querySelectorAll('[data-project]']);
 
-//Have the function in projectDOM to handle printing out the projects onto the screen
 function domReplaceProjects(projects) {
+    //Use projects array size for loop conditional
+    if(projects.length <= 5) {
+        for(let i = 0; i <= projects.length; i++) {
 
+        }
+    }
+    //Use data attributes size to replace that.
+    else {
+
+    }
 }
+
+/*
+const createProjectDescription = (project) => {
+    return `
+  <div class="top">
+    <h3 class="title">${project.name}</h3>
+    <h6 class="language">${project.desc}</h6>
+    <p class="desc">${project.language}</p>
+  </div>
+  `
+};
+
+const createProjectBottom = (project) => {
+    return `
+<div class="bottom">
+            <div class="image"> </div>
+            <p class="type">${project.type}</p>
+            </div>
+`
+};
+
+const createProjectEl = (project) => {
+    return `
+    <div class="row">
+          <img class="logo" src="https://static.vecteezy.com/system/resources/previews/000/350/423/non_2x/vector-checklist-icon.jpg" alt="image">
+          ${createProjectDescription(project)}
+          ${createProjectBottom(project)}
+    </div>
+  `
+};
+
+const draw = () => {
+    const wrapper = document.getElementById('wrapper');
+
+    let content = '';
+
+    for (let project of projects) {
+        content += createProjectEl(project)
+    }
+
+    wrapper.innerHTML = content;
+}
+*/
