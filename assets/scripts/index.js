@@ -97,7 +97,6 @@ function fullFilter() {
       //Normal Filter
        else {
           for (let i = 0; i < projects.length; i++) {
-              //Only print personal and HTML/CSS for some reason
               console.log(projects[i].type.includes(projectType) && projects[i].language.includes(projectLang));
               if (projects[i].type.includes(projectType) && projects[i].language.includes(projectLang)) {
 
