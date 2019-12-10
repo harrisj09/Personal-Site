@@ -19,7 +19,6 @@ const REACT = 'REACT';
 */
 let projectType = BOTH;
 let projectLang = ALL;
-// end
 
 // Get rid of the onClick in the html and do it all in here.
 // Give them a shared class so you can select all of them at once
@@ -79,26 +78,31 @@ function languageFilter(obj, string) {
 // FilteredArray should be const.
 function fullFilter() {
     const filteredArray = [];
-    /*
-      if(ifDefaultChoices) {
+      if(projectType === BOTH && projectLang === ALL) {
             console.log("default values");
+            domRegularArray(projects);
             //Just call function to print the projects Array otherwise run the loop
             //A function might be needed to handle if one of the default values but the other one isn't (type is BOTH lang is JavaScript)
         }
        else {
-       }
-    */
-    for (let i = 0; i < projects.length; i++) {
-        if (projects[i].type.includes(projectType) && projects[i].language.includes(projectLang)) {
-            filteredArray.push(project(projects[i].name, projects[i].desc, projects[i].type, projects[i].language));
-        }
-    }
+          for (let i = 0; i < projects.length; i++) {
+              //Only print personal and HTML/CSS for some reason
+              if (projects[i].type.includes(projectType) && projects[i].language.includes(projectLang)) {
+                  //filteredArray.push(project(projects[i].name, projects[i].desc, projects[i].type, projects[i].language));
+                  filteredArray[i] = Object.assign({}, projects[i]);
+              }
+          }
+      }
+
     printArray(filteredArray);
 }
 
 function printArray(filteredArray) {
+    console.log(filteredArray[0].name);
     for(let i = 0; i < filteredArray.length; i++) {
-        console.log(i);
-        console.log(filteredArray[i].name + filteredArray[i].desc + filteredArray[i].type + filteredArray[i].language);
+        console.log(filteredArray[i]);
     }
+
 }
+
+//Have the function in projectDOM to handle printing out the projects onto the screen
