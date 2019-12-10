@@ -18,6 +18,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.about__title--paragraph--spotify {
+  text-decoration: none;
+  color: #646464;
+}
+
 .skills__wrapper {
   background-image: url("../images/forest.jpg");
   min-height: 700px;

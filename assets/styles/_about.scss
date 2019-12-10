@@ -44,6 +44,11 @@
     font-family: $baseFont;
 }
 
+.about__title--paragraph--spotify {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+}
+
 .skills__wrapper {
     background-image: $secondBackground;
     min-height: 700px;
