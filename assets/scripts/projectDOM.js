@@ -16,17 +16,35 @@ const projectAttributes = [
     document.querySelector('[data-project="6"]'),
 ];
 
+let i = 0;
+
 function domReplaceProjects(projects) {
     console.log(projectAttributes.length);
     //Use projects array size for loop conditional
     if(projects.length <= 6) {
-        for(let i = 0; i <= projects.length; i++) {
+        for(i = 0; i <= projects.length; i++) {
+            projectAttributes[i] = `
+                  <div class="top">
+                    <h3 class="title">${project.name}</h3>
+                    <h6 class="language">${project.desc}</h6>
+                    <p class="desc">${project.language}</p>
+                </div>
+                
+                <div class="bottom">
+                    <div class="image"> </div>
+                    <p class="type">${project.type}</p>
+                </div>
+                
+                    <div class="row">
+                    <img class="logo" src="https://static.vecteezy.com/system/resources/previews/000/350/423/non_2x/vector-checklist-icon.jpg" alt="image">
+                 </div>
+                `
         }
     }
     //Use data attributes array size for loop conditional
     else {
-        for(let i = 0; i < projectAttributes.length; i++) {
-            console.log(i);
+        for(i = 0; i < projectAttributes.length; i++) {
+            //logic here
         }
     }
 }
@@ -42,7 +60,6 @@ const createProjectDescription = (project) => {
   </div>
   `
 };
-
 
 const createProjectBottom = (project) => {
     return `
