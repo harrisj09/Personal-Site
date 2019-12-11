@@ -1,8 +1,22 @@
 /*
 Eventually apply these changes to this script
 https://pastebin.com/tHhu5NES
+
+
+https://jsbin.com/sujocoxara/edit?html,js,console,output
  */
 
+let htmlRewrite = ``;
+let wrapper = document.getElementById("wrapper");
+
+const projectAttributes = [
+    document.querySelector('[data-project="1"]'),
+    document.querySelector('[data-project="2"]'),
+    document.querySelector('[data-project="3"]'),
+    document.querySelector('[data-project="4"]'),
+    document.querySelector('[data-project="5"]'),
+    document.querySelector('[data-project="6"]'),
+];
 
 //Types
 const BOTH = 'BOTH';
@@ -63,10 +77,15 @@ function languageFilter(obj, string) {
 }
 
 function fullHandler() {
+    let index = 0;
+    htmlRewrite = ``;
     const filteredArray = [];
       if(projectType === BOTH && projectLang === ALL) {
-          domReplaceProjects(projects);
-          console.log("default values");
+          wrapper.innerHTML = "";
+
+          projects.forEach(replaceDOM);
+
+          wrapper.innerHTML = htmlRewrite;
         }
 
       //type is default, lang is not
@@ -76,7 +95,13 @@ function fullHandler() {
                   filteredArray[i] = Object.assign({}, projects[i]);
               }
           }
-          domReplaceProjects(filteredArray);
+
+          wrapper.innerHTML = "";
+
+          filteredArray.forEach(replaceDOM);
+
+          wrapper.innerHTML = htmlRewrite;
+
           filteredArray.forEach(printArray);
       }
 
@@ -87,7 +112,13 @@ function fullHandler() {
                   filteredArray[i] = Object.assign({}, projects[i]);
               }
           }
-          domReplaceProjects(filteredArray);
+          wrapper.innerHTML = "";
+
+          filteredArray.forEach(replaceDOM);
+
+          wrapper.innerHTML = htmlRewrite;
+
+          //debugging
           filteredArray.forEach(printArray);
       }
 
@@ -99,7 +130,13 @@ function fullHandler() {
                   filteredArray[i] = Object.assign({}, projects[i]);
               }
           }
-          domReplaceProjects(filteredArray);
+
+          wrapper.innerHTML = "";
+
+          filteredArray.forEach(replaceDOM);
+
+          wrapper.innerHTML = htmlRewrite;
+
           filteredArray.forEach(printArray);
       }
 }
@@ -107,3 +144,43 @@ function fullHandler() {
 function printArray(filteredArray) {
     console.log(filteredArray);
 }
+
+function replaceDOM(filteredArray, index) {
+    htmlRewrite += `
+                    <div class="row" data-project="${index}">
+                    <img class="logo" src="https://static.vecteezy.com/system/resources/previews/000/350/423/non_2x/vector-checklist-icon.jpg" alt="image">
+                      <div class="top">
+                    <h3 class="title">${filteredArray.name}</h3>
+                    <h6 class="language">${filteredArray.language}</h6>
+                    <p class="desc">${filteredArray.desc}</p>
+                </div>
+
+                <div class="bottom">
+                    <div class="image"> </div>
+                    <p class="type">${filteredArray.type}</p>
+                </div>
+                 </div>
+    `;
+}
+
+/*          projectAttributes.forEach(function() {
+                        htmlRewrite += `
+                      <div class="top">
+                    <h3 class="title">${filteredArray[index].name}</h3>
+                    <h6 class="language">${filteredArray[index].language}</h6>
+                    <p class="desc">${filteredArray[index].desc}</p>
+                </div>
+
+                <div class="bottom">
+                    <div class="image"> </div>
+                    <p class="type">${filteredArray[index].type}</p>
+                </div>
+
+                    <div class="row">
+                    <img class="logo" src="https://static.vecteezy.com/system/resources/previews/000/350/423/non_2x/vector-checklist-icon.jpg" alt="image">
+                 </div>
+    `;
+              index++;
+          });
+          wrapper.innerHTML = '';
+          wrapper.innerHTML = htmlRewrite;*/
