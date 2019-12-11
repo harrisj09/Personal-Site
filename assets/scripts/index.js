@@ -39,7 +39,7 @@ const projects = [
     new project("Calculator", "Basic JavaScript Calculator", PERSONAL, HTML + ", " + JAVASCRIPT),
     new project("TODO", "Organize your everyday life with this web app made with React", PERSONAL, HTML + ", " + JAVASCRIPT + ", " + REACT),
     new project("Login and Signup", "Static Page for logging in and signing up", PERSONAL, HTML),
-    new project("RNG Therapy Site", "WordPress Site that allows people to schedule appointments.", CLIENT, WORDPRESS),
+    new project("RNG Therapy Site", "WordPress Site that allows users to schedule appointments.", CLIENT, WORDPRESS),
     new project("Coffee Shop Website","Static Page for a Coffee Shop", CLIENT, HTML + ", " + JAVASCRIPT + ", " + REACT),
 ];
 
