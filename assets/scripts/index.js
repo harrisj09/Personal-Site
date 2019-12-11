@@ -7,7 +7,7 @@ https://jsbin.com/sujocoxara/edit?html,js,console,output
  */
 
 let htmlRewrite = ``;
-let wrapper = document.getElementById("wrapper");
+const wrapper = document.getElementById("wrapper");
 
 //Types
 const BOTH = 'BOTH';
