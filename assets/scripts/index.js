@@ -2,7 +2,6 @@
 Eventually apply these changes to this script
 https://pastebin.com/tHhu5NES
 
-
 https://jsbin.com/sujocoxara/edit?html,js,console,output
  */
 
@@ -72,9 +71,7 @@ function fullHandler() {
     const filteredArray = [];
       if(projectType === BOTH && projectLang === ALL) {
           wrapper.innerHTML = "";
-
           projects.forEach(replaceDOM);
-
           wrapper.innerHTML = htmlRewrite;
         }
 
@@ -85,14 +82,9 @@ function fullHandler() {
                   filteredArray[i] = Object.assign({}, projects[i]);
               }
           }
-
           wrapper.innerHTML = "";
-
           filteredArray.forEach(replaceDOM);
-
           wrapper.innerHTML = htmlRewrite;
-
-          filteredArray.forEach(printArray);
       }
 
       //Type isnt default, lang is
@@ -103,36 +95,21 @@ function fullHandler() {
               }
           }
           wrapper.innerHTML = "";
-
           filteredArray.forEach(replaceDOM);
-
           wrapper.innerHTML = htmlRewrite;
-
-          //debugging
-          filteredArray.forEach(printArray);
       }
 
       //Normal Filter
        else {
           for (let i = 0; i < projects.length; i++) {
-              console.log(projects[i].type.includes(projectType) && projects[i].language.includes(projectLang));
               if (projects[i].type.includes(projectType) && projects[i].language.includes(projectLang)) {
                   filteredArray[i] = Object.assign({}, projects[i]);
               }
           }
-
           wrapper.innerHTML = "";
-
           filteredArray.forEach(replaceDOM);
-
           wrapper.innerHTML = htmlRewrite;
-
-          filteredArray.forEach(printArray);
       }
-}
-
-function printArray(filteredArray) {
-    console.log(filteredArray);
 }
 
 function replaceDOM(filteredArray, index) {
