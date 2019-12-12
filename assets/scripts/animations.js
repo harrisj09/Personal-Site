@@ -10,6 +10,8 @@ execute the fade in animation.
 
 
 /*
+
+                        NOT WORKING
     A threshold of 1.0 means that when 100% of the target
     is visible within the element specified by the root option, the callback is invoked.
  */
