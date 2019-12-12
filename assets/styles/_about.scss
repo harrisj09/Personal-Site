@@ -36,7 +36,7 @@
 }
 
 .about__title--paragraph {
-    margin: 50px 0 200px 100px;
+    margin: 50px 0 100px 100px;
     text-align: left;
     width: 50%;
     height: 200px;
@@ -44,15 +44,14 @@
     font-family: $baseFont;
 }
 
-.about__title--paragraph--spotify {
-    text-decoration: none;
-    color: rgb(0, 110, 255);
+/* Later use */
+.about__title--spotify-widget {
+    font-size: 1.55rem;
+    display: inline-block;
 }
 
-.about__title--paragraph--spotify:hover {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
+.about
+
 
 .skills__wrapper {
     background-image: $secondBackground;
@@ -63,7 +62,6 @@
     width: 100%;
     position: relative;
     z-index: 3;
-
     margin: 100px 0 0 0;
     grid-gap: 50px;
     display: grid;

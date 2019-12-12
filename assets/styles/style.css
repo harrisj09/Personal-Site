@@ -11,7 +11,7 @@
 }
 
 .about__title--paragraph {
-  margin: 50px 0 200px 100px;
+  margin: 50px 0 100px 100px;
   text-align: left;
   width: 50%;
   height: 200px;
@@ -19,14 +19,14 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.about__title--paragraph--spotify {
-  text-decoration: none;
-  color: #006eff;
+/* Later use */
+.about__title--spotify-widget {
+  font-size: 1.55rem;
+  display: inline-block;
 }
 
-.about__title--paragraph--spotify:hover {
-  text-decoration: none;
-  color: black;
+.about__spotify-widget {
+  display: inline-block;
 }
 
 .skills__wrapper {
