@@ -94,15 +94,28 @@ HERO
         margin: 0;
         padding-top: 15%;
         padding-bottom: 15px;
+        animation: fadeIn ease 3s;
     }
+
+    @keyframes fadeIn{
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+
     .hero__title--sub-title {
         position: relative;
         z-index: 5;
         font-size: $primaryParagraphFont;
         margin: 0;
+        animation: fadeIn ease 3s;
     }
 .hero__cta {
     @include ctaPreFab(.85);
+    animation: fadeIn ease 3s;
 }
 
 .hero__cta:hover {

@@ -251,6 +251,26 @@ HERO
   margin: 0;
   padding-top: 15%;
   padding-bottom: 15px;
+  -webkit-animation: fadeIn ease 3s;
+          animation: fadeIn ease 3s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hero .hero__title--sub-title {
@@ -258,6 +278,8 @@ HERO
   z-index: 5;
   font-size: 1.25em;
   margin: 0;
+  -webkit-animation: fadeIn ease 3s;
+          animation: fadeIn ease 3s;
 }
 
 .hero .hero__cta {
@@ -273,6 +295,8 @@ HERO
   padding: 12px 120px;
   margin: 20px 0 0 0;
   opacity: 0.85;
+  -webkit-animation: fadeIn ease 3s;
+          animation: fadeIn ease 3s;
 }
 
 .hero .hero__cta:hover {
