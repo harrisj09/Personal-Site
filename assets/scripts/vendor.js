@@ -5,4 +5,4 @@ Instead of targeting each element again in every class just have a global class 
     const aboutTitle = document.querySelectorAll(".about__title");
     const aboutParagraph = document.querySelectorAll(".about__title--paragraph");
     const projectsWrapper = document.querySelectorAll(".wrapper");
-    
+
