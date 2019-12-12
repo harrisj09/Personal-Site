@@ -21,7 +21,12 @@
 
 .about__title--paragraph--spotify {
   text-decoration: none;
-  color: #646464;
+  color: #006eff;
+}
+
+.about__title--paragraph--spotify:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .skills__wrapper {
