@@ -3,6 +3,8 @@ Eventually apply these changes to this script
 https://pastebin.com/tHhu5NES
 
 https://jsbin.com/sujocoxara/edit?html,js,console,output
+
+https://stackoverflow.com/questions/59276857/using-javascript-dom-to-rewrite-an-array-of-data-attributes-using-an-array-of-ob
  */
 
 let htmlRewrite = ``;
