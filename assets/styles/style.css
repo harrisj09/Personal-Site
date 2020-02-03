@@ -25,10 +25,7 @@
   display: inline-block;
 }
 
-.about__spotify-widget {
-  display: inline-block;
-}
-
+.about
 .skills__wrapper {
   background-image: url("../images/forest.jpg");
   min-height: 700px;
