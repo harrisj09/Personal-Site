@@ -232,13 +232,9 @@ ul {
 HERO 
 */
 .hero {
-  background-image: url("../images/background.jpg");
   min-height: 1000px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #6FCF97;
   width: 100%;
-  text-align: center;
   display: block;
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -251,8 +247,7 @@ HERO
   position: relative;
   z-index: 5;
   margin: 0;
-  padding-top: 15%;
-  padding-bottom: 15px;
+  padding-top: 5%;
   -webkit-animation: fadeIn ease 3s;
           animation: fadeIn ease 3s;
 }
@@ -260,18 +255,22 @@ HERO
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
+    margin-left: 0px;
   }
   100% {
     opacity: 1;
+    margin-left: 40px;
   }
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    margin-left: 0px;
   }
   100% {
     opacity: 1;
+    margin-left: 40px;
   }
 }
 
@@ -279,7 +278,6 @@ HERO
   position: relative;
   z-index: 5;
   font-size: 1.25em;
-  margin: 0;
   -webkit-animation: fadeIn ease 3s;
           animation: fadeIn ease 3s;
 }

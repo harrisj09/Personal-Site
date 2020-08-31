@@ -74,13 +74,9 @@ ul {
 HERO 
 */
 .hero {
-    background-image: $backgroundPath;
     min-height: 1000px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #6FCF97;
     width: 100%;
-    text-align: center;
     display: block;
     color: rgb(255, 255, 255);
     font-family: $baseFont;
@@ -92,17 +88,18 @@ HERO
         position: relative;
         z-index: 5;
         margin: 0;
-        padding-top: 15%;
-        padding-bottom: 15px;
+        padding-top: 5%;
         animation: fadeIn ease 3s;
     }
 
     @keyframes fadeIn{
         0% {
           opacity:0;
+          margin-left: 0px;
         }
         100% {
           opacity:1;
+          margin-left: 40px;
         }
       }
 
@@ -110,7 +107,6 @@ HERO
         position: relative;
         z-index: 5;
         font-size: $primaryParagraphFont;
-        margin: 0;
         animation: fadeIn ease 3s;
     }
 .hero__cta {
