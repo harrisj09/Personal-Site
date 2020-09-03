@@ -115,19 +115,25 @@ HERO
       }
 
 .arrow__wrapper {
-    padding: 90px 0px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     border: 2px solid black;
-    width: 10px;
-    height: 10px;
+    width: 90%;
+    padding: 20px 0px;
     position: absolute;
-    bottom: 50px;
+    bottom: 0px;
 }
 
 .arrow--body {
     border: 2px solid black;
+    
 }
+
+.arrow--edges {
+    border: 2px solid black;
+    width: 40px;
+}
+
 
 .hero__cta {
     @include ctaPreFab(.85);
