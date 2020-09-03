@@ -245,7 +245,7 @@ HERO
 .hero .hero__title {
   font-size: 3em;
   position: relative;
-  left: 30px;
+  padding: 0px, 30px;
   z-index: 5;
   margin: 0;
   padding-top: 5%;
@@ -255,7 +255,7 @@ HERO
 
 .hero .hero__title--sub-title {
   position: relative;
-  left: 30px;
+  padding: 0px, 30px;
   z-index: 5;
   font-size: 1.25em;
   -webkit-animation: fadeIn ease 2.5s;
@@ -271,7 +271,7 @@ HERO
   100% {
     opacity: 1;
     position: relative;
-    left: 30px;
+    left: 0px;
   }
 }
 
@@ -284,7 +284,7 @@ HERO
   100% {
     opacity: 1;
     position: relative;
-    left: 30px;
+    left: 0px;
   }
 }
 
