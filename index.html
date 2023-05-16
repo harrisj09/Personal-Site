@@ -1,151 +1,117 @@
 <!DOCTYPE html>
-<!--
-	Rocket Internet by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+<html lang="en">
 
-<html>
 <head>
-	<title>John Harris</title>
-
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-
-	<!-- Goggle Font -->
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
-
-	<!-- Font Css -->
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-
-	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	<!-- Animation Css -->
-	<link rel="stylesheet" href="css/animate.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Engineer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
-<header>
-	<div id="homeFullScreen">
-		<div class="header-text">
-			<h1>John Harris</h1>
-			<div class="vertical-line"></div>
-			<p>
-				Computer Science Student 
-			</p>
-		</div><!-- End HeaderText -->
-	</div><!-- End homeFullScreen -->
-</header><!-- End Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- Feature -->
+  <section id="about">
+    <div class="container">
+      <h1>About Me</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin ante vel mauris eleifend, at
+        tristique velit faucibus. Integer iaculis ante in felis faucibus, et tempus lorem varius. Donec posuere
+        ultricies nulla, non pharetra odio consequat at. Vestibulum eu sem vitae metus tristique pellentesque. Nulla
+        facilisi. Donec varius malesuada lacus, et vulputate lectus dignissim eu. Quisque quis consectetur ante, nec
+        dictum lacus.
+      </p>
+    </div>
+  </section>
 
-<section class="feature">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 col-sm-6">
-				<div class="feature-box">
-					<h1>Hi I'm John</h1>
-					<p>I'm currently pursing a bachelors degree in Computer Science and plan on going for my masters in physics to eventually work in quantum computing.</p>
-				</div>
-			</div><!-- End col-md-6 -->
-			<div class="col-md-6 col-sm-6 nopadding">
-				<img src="images/1.png">
-			</div><!-- End col-md-6 -->
+  <section id="experience">
+    <div class="container">
+      <h1>Work Experience</h1>
+      <div class="job">
+        <h3>Software Developer</h3>
+        <h4>ABC Company</h4>
+        <p class="job-date">January 2019 - Present</p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+          <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Junior Developer</h3>
+        <h4>XYZ Corporation</h4>
+        <p class="job-date">June 2017 - December 2018</p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+          <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-			<div class="clearfix"></div><!-- End clearfix -->
+  <section id="projects">
+    <div class="container">
+      <h1>Projects</h1>
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin ante vel mauris eleifend, at
+          tristique velit faucibus. Integer iaculis ante in felis faucibus, et tempus lorem varius.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin ante vel mauris eleifend, at tristique velit faucibus. Integer iaculis ante in felis faucibus, et tempus lorem varius.
+        </p>
+      </div>
+    </div>
+  </section>
 
-			<div class="col-md-6 col-sm-6 nopadding">
-				<img src="images/1.png">
-			</div><!-- End col-md-6 -->
-			<div class="col-md-6 col-sm-6">
-				<div class="feature-box">
-					<h1>My Skills</h1>
-					<p>I've worked in a wide variety of languages, but my personal favorites are Java, C++, C, JavaScript and Python.</p>
-				</div>
-			</div><!-- End col-md-6 -->
-		</div>
-	</div>
-</section>
+  <section id="contact">
+    <div class="container">
+      <h1>Contact Me</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin ante vel mauris eleifend, at
+        tristique velit faucibus.
+      </p>
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
 
-<!-- portfolio -->
-
-<section class="portfolio">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h1 class="heading">Portfolio</h1>
-			</div><!-- End col-md-12 -->
-
-			<div class="col-md-4 col-sm-4">
-				<img src="images/p-1.png">
-			</div><!-- End col-md-4 -->
-			<div class="col-md-4 col-sm-4">
-				<img src="images/p-2.png">
-			</div><!-- End col-md-4 -->
-			<div class="col-md-4 col-sm-4 last-img">
-				<img src="images/p-3.png">
-			</div><!-- End col-md-4 -->
-
-			<div class="clearfix"></div><!-- End clearfix -->
-
-			<div class="col-md-4 col-sm-4">
-				<img src="images/p-4.png">
-			</div><!-- End col-md-4 -->
-			<div class="col-md-4 col-sm-4">
-				<img src="images/p-5.png">
-			</div><!-- End col-md-4 -->
-			<div class="col-md-4 col-sm-4 last-img">
-				<img src="images/p-6.png">
-			</div><!-- End col-md-4 -->
-		</div><!-- End row -->
-	</div><!-- End container -->
-</section>
-
-<section class="work-experience">
-	
-</section>
-
-<!-- Call to Action -->
-<section class="call-top-action text-center">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h1>many variations of passages</h1>
-				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration 
-				<br />
-				in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-				<span>Download My Resume</span>
-			</div><!-- End col-md-12 -->
-		</div><!-- End row -->
-	</div><!-- End container -->
-</section>
-
-<!-- Footer -->
-<footer>
-	<ul class="in-line">
-		<li><a href="https://github.com/harrisj09"><span><i class="fa fa-github"></i></span></a></li>
-		<li><a href="https://twitter.com/harrisj09"><span><i class="fa fa-twitter"></i></span></a></li>
-		<li><a href="https://www.linkedin.com/in/john-harris-1548b3197/"><span><i class="fa fa-linkedin"></i></span></a></li>
-	</ul>
-	<!-- <span class="copyright">&#169; Untitled . All rights reserved. Design By <a href="http://templatestock.co">Templatestock.co</a></span> -->
-</footer>
-	
-
-
-
-<!-- Main JS -->
-<script type="text/javascript" src="js/jquery-main.js"></script>
-
-<!-- Bootstrap JS -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-<!-- Animation JS -->
-<script type="text/javascript" src="js/wow.min.js"></script>
-
-<!-- Custom JS -->
-<script type="text/javascript" src="js/custom.js"></script>
-
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Software Engineer Portfolio. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/your-twitter" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 
 </body>
+
 </html>
